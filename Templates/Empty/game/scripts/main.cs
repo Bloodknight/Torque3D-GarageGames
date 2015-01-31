@@ -96,6 +96,8 @@ function onStart()
    exec("./client/init.cs");
    exec("./server/init.cs");
    
+   // init SQLITE Plugin
+   exec("./sqlite.cs");
    // Init the physics plugin.
    physicsInit();
       
