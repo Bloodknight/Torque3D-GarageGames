@@ -183,3 +183,7 @@ My Projects/
 Project Manager.exe
 projects.xml
 Qt*.dll
+Engine/lib/glm/doc/
+Engine/lib/glm/cmake/
+Engine/lib/glm/test/
+Engine/lib/glm/util/

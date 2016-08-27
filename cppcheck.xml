@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.74"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;ShapeAsset::mpAssetDefinition&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;ShapeAsset::mpAssetDefinition&amp;#039; is not initialized in the constructor.">
+            <location file0="T3D/assets/ShapeAsset.cpp" file="T3D\assets\ShapeAsset.cpp" line="98"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;m&amp;lt;numMoves&amp;amp;&amp;amp;con&amp;#039; is redundant or there is possible null pointer dereference: con." verbose="Either the condition &amp;#039;m&amp;lt;numMoves&amp;amp;&amp;amp;con&amp;#039; is redundant or there is possible null pointer dereference: con.">
+            <location file0="T3D/gameBase/extended/extendedGameProcess.cpp" file="T3D\gameBase\extended\extendedGameProcess.cpp" line="310"/>
+            <location file0="T3D/gameBase/extended/extendedGameProcess.cpp" file="T3D\gameBase\extended\extendedGameProcess.cpp" line="318"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: tce" verbose="Possible null pointer dereference: tce">
+            <location file0="T3D/gameBase/hifi/hifiGameProcess.cpp" file="T3D\gameBase\hifi\hifiGameProcess.cpp" line="515"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;m&amp;lt;numMoves&amp;amp;&amp;amp;con&amp;#039; is redundant or there is possible null pointer dereference: con." verbose="Either the condition &amp;#039;m&amp;lt;numMoves&amp;amp;&amp;amp;con&amp;#039; is redundant or there is possible null pointer dereference: con.">
+            <location file0="T3D/gameBase/std/stdGameProcess.cpp" file="T3D\gameBase\std\stdGameProcess.cpp" line="361"/>
+            <location file0="T3D/gameBase/std/stdGameProcess.cpp" file="T3D\gameBase\std\stdGameProcess.cpp" line="368"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(actor)&amp;#039; is redundant or there is possible null pointer dereference: actor." verbose="Either the condition &amp;#039;if(actor)&amp;#039; is redundant or there is possible null pointer dereference: actor.">
+            <location file0="T3D/physics/physx/pxMultiActor.cpp" file="T3D\physics\physx\pxMultiActor.cpp" line="845"/>
+            <location file0="T3D/physics/physx/pxMultiActor.cpp" file="T3D\physics\physx\pxMultiActor.cpp" line="849"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;afxEffectConstraint::is_death_clip&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;afxEffectConstraint::is_death_clip&amp;#039; is not initialized in the constructor.">
+            <location file0="afx/afxConstraint.cpp" file="afx\afxConstraint.cpp" line="1902"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;afxEffectConstraint::is_death_clip&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;afxEffectConstraint::is_death_clip&amp;#039; is not initialized in the constructor.">
+            <location file0="afx/afxConstraint.cpp" file="afx\afxConstraint.cpp" line="1909"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;afxF_Drag::datablock&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;afxF_Drag::datablock&amp;#039; is not initialized in the constructor.">
+            <location file0="afx/forces/afxF_Drag.cpp" file="afx\forces\afxF_Drag.cpp" line="150"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;afxF_Gravity::datablock&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;afxF_Gravity::datablock&amp;#039; is not initialized in the constructor.">
+            <location file0="afx/forces/afxF_Gravity.cpp" file="afx\forces\afxF_Gravity.cpp" line="134"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(times)&amp;#039; is redundant or there is possible null pointer dereference: times." verbose="Either the condition &amp;#039;if(times)&amp;#039; is redundant or there is possible null pointer dereference: times.">
+            <location file0="afx/util/afxPath3D.cpp" file="afx\util\afxPath3D.cpp" line="293"/>
+            <location file0="afx/util/afxPath3D.cpp" file="afx\util\afxPath3D.cpp" line="297"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(value)&amp;#039; is redundant or there is possible null pointer dereference: value." verbose="Either the condition &amp;#039;if(value)&amp;#039; is redundant or there is possible null pointer dereference: value.">
+            <location file0="console/persistenceManager.cpp" file="console\persistenceManager.cpp" line="1021"/>
+            <location file0="console/persistenceManager.cpp" file="console\persistenceManager.cpp" line="1026"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;VolumetricFogRTManager::mPlatformWindow&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;VolumetricFogRTManager::mPlatformWindow&amp;#039; is not initialized in the constructor.">
+            <location file0="environment/VolumetricFogRTManager.cpp" file="environment\VolumetricFogRTManager.cpp" line="85"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;BasicClouds::mDiffuseMapSC&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;BasicClouds::mDiffuseMapSC&amp;#039; is not initialized in the constructor.">
+            <location file0="environment/basicClouds.cpp" file="environment\basicClouds.cpp" line="61"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;CloudLayer::mNormalHeightMapSC&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;CloudLayer::mNormalHeightMapSC&amp;#039; is not initialized in the constructor.">
+            <location file0="environment/cloudLayer.cpp" file="environment\cloudLayer.cpp" line="75"/>
+        </error>
+        <error id="invalidPrintfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXPrimitiveBuffer *&amp;#039;." verbose="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXPrimitiveBuffer *&amp;#039;.">
+            <location file0="gfx/gfxPrimitiveBuffer.cpp" file="gfx\gfxPrimitiveBuffer.cpp" line="50"/>
+        </error>
+        <error id="invalidPrintfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXPrimitiveBuffer *&amp;#039;." verbose="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXPrimitiveBuffer *&amp;#039;.">
+            <location file0="gfx/gfxPrimitiveBuffer.cpp" file="gfx\gfxPrimitiveBuffer.cpp" line="48"/>
+        </error>
+        <error id="invalidPrintfArgType_int" severity="warning" msg="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXTextureObject *&amp;#039;." verbose="%x in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;GFXTextureObject *&amp;#039;.">
+            <location file0="gfx/gfxTextureObject.cpp" file="gfx\gfxTextureObject.cpp" line="54"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;GFXNullVertexBuffer::tempBuf&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;GFXNullVertexBuffer::tempBuf&amp;#039; is not initialized in the constructor.">
+            <location file0="gfx/Null/gfxNullDevice.cpp" file="gfx\Null\gfxNullDevice.cpp" line="168"/>
+        </error>
+        <error id="publicAllocationError" severity="warning" msg="Possible leak in public function. The pointer &amp;#039;tempBuf&amp;#039; is not deallocated before it is allocated." verbose="Possible leak in public function. The pointer &amp;#039;tempBuf&amp;#039; is not deallocated before it is allocated.">
+            <location file0="gfx/Null/gfxNullDevice.cpp" file="gfx\Null\gfxNullDevice.cpp" line="184"/>
+        </error>
+        <error id="operatorEqVarError" severity="warning" msg="Member variable &amp;#039;GLTimer::mData&amp;#039; is not assigned a value in &amp;#039;GLTimer::operator=&amp;#039;." verbose="Member variable &amp;#039;GLTimer::mData&amp;#039; is not assigned a value in &amp;#039;GLTimer::operator=&amp;#039;.">
+            <location file0="gfx/gl/gfxGLDeviceProfiler.cpp" file="gfx\gl\gfxGLDeviceProfiler.cpp" line="66"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(parent)&amp;#039; is redundant or there is possible null pointer dereference: parent." verbose="Either the condition &amp;#039;if(parent)&amp;#039; is redundant or there is possible null pointer dereference: parent.">
+            <location file0="gui/controls/guiGradientCtrl.cpp" file="gui\controls\guiGradientCtrl.cpp" line="172"/>
+            <location file0="gui/controls/guiGradientCtrl.cpp" file="gui\controls\guiGradientCtrl.cpp" line="176"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(parent)&amp;#039; is redundant or there is possible null pointer dereference: parent." verbose="Either the condition &amp;#039;if(parent)&amp;#039; is redundant or there is possible null pointer dereference: parent.">
+            <location file0="gui/controls/guiGradientCtrl.cpp" file="gui\controls\guiGradientCtrl.cpp" line="173"/>
+            <location file0="gui/controls/guiGradientCtrl.cpp" file="gui\controls\guiGradientCtrl.cpp" line="176"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;pTreeTraverse!=0&amp;#039; is redundant or there is possible null pointer dereference: pTreeTraverse." verbose="Either the condition &amp;#039;pTreeTraverse!=0&amp;#039; is redundant or there is possible null pointer dereference: pTreeTraverse.">
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1391"/>
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1388"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;pTreeTraverse!=0&amp;#039; is redundant or there is possible null pointer dereference: pTreeTraverse." verbose="Either the condition &amp;#039;pTreeTraverse!=0&amp;#039; is redundant or there is possible null pointer dereference: pTreeTraverse.">
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1410"/>
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1407"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;pParentItem!=0&amp;#039; is redundant or there is possible null pointer dereference: pParentItem." verbose="Either the condition &amp;#039;pParentItem!=0&amp;#039; is redundant or there is possible null pointer dereference: pParentItem.">
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1414"/>
+            <location file0="gui/controls/guiTreeViewCtrl.cpp" file="gui\controls\guiTreeViewCtrl.cpp" line="1404"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite conditions in nested &amp;#039;if&amp;#039; blocks lead to a dead code block." verbose="Opposite conditions in nested &amp;#039;if&amp;#039; blocks lead to a dead code block.">
+            <location file0="gui/worldEditor/terrainActions.cpp" file="gui\worldEditor\terrainActions.cpp" line="303"/>
+            <location file0="gui/worldEditor/terrainActions.cpp" file="gui\worldEditor\terrainActions.cpp" line="306"/>
+        </error>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite conditions in nested &amp;#039;if&amp;#039; blocks lead to a dead code block." verbose="Opposite conditions in nested &amp;#039;if&amp;#039; blocks lead to a dead code block.">
+            <location file0="gui/worldEditor/terrainActions.cpp" file="gui\worldEditor\terrainActions.cpp" line="350"/>
+            <location file0="gui/worldEditor/terrainActions.cpp" file="gui\worldEditor\terrainActions.cpp" line="353"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;pLoadedEntry==0&amp;#039; is redundant or there is possible null pointer dereference: pLoadedEntry." verbose="Either the condition &amp;#039;pLoadedEntry==0&amp;#039; is redundant or there is possible null pointer dereference: pLoadedEntry.">
+            <location file0="module/moduleManager.cpp" file="module\moduleManager.cpp" line="568"/>
+            <location file0="module/moduleManager.cpp" file="module\moduleManager.cpp" line="562"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;GuiNavEditorUndoAction::mNavEditor&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;GuiNavEditorUndoAction::mNavEditor&amp;#039; is not initialized in the constructor.">
+            <location file0="navigation/guiNavEditorCtrl.cpp" file="navigation\guiNavEditorCtrl.h" line="172"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function asctime() is not used." verbose="Return value of function asctime() is not used.">
+            <location file0="platformWin32/winInput.cpp" file="platformWin32\winInput.cpp" line="89"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformWin32/winInput.cpp" file="platformWin32\winInput.cpp" line="106"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformWin32/winInput.cpp" file="platformWin32\winInput.cpp" line="127"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformWin32/winInput.cpp" file="platformWin32\winInput.cpp" line="384"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function asctime() is not used." verbose="Return value of function asctime() is not used.">
+            <location file0="platformX86UNIX/x86UNIXInput.client.cpp" file="platformX86UNIX\x86UNIXInput.client.cpp" line="103"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformX86UNIX/x86UNIXInput.client.cpp" file="platformX86UNIX\x86UNIXInput.client.cpp" line="107"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformX86UNIX/x86UNIXInput.client.cpp" file="platformX86UNIX\x86UNIXInput.client.cpp" line="109"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function log() is not used." verbose="Return value of function log() is not used.">
+            <location file0="platformX86UNIX/x86UNIXInput.client.cpp" file="platformX86UNIX\x86UNIXInput.client.cpp" line="223"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;UnixRedBookDevice::mPlaying&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;UnixRedBookDevice::mPlaying&amp;#039; is not initialized in the constructor.">
+            <location file0="platformX86UNIX/x86UNIXRedbook.cpp" file="platformX86UNIX\x86UNIXRedbook.cpp" line="74"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;lastAccuTex&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;lastAccuTex&amp;#039; to itself.">
+            <location file0="renderInstance/renderMeshMgr.cpp" file="renderInstance\renderMeshMgr.cpp" line="242"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;lastAccuTex&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;lastAccuTex&amp;#039; to itself.">
+            <location file0="renderInstance/renderPrePassMgr.cpp" file="renderInstance\renderPrePassMgr.cpp" line="478"/>
+        </error>
+    </errors>
+</results>
