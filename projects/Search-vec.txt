@@ -1,0 +1,448 @@
+Find all "vec", Whole word, Subfolders, Find Results 1, Current Project: Tools\CMake\Release_3.9.vcxproj, ""
+  G:\Torque3D\Engine\source\collision\extrudedPolyList.h(110):   void extrude(const Polyhedron&, const VectorF& vec);
+  G:\Torque3D\Engine\source\collision\polytope.cpp(283):void Polytope::extrudeFace(S32 faceIdx,const VectorF& vec,Polytope* out)
+  G:\Torque3D\Engine\source\collision\polytope.cpp(324):               out->mVertexList.last().point += vec;
+  G:\Torque3D\Engine\source\collision\polytope.cpp(370):bool Polytope::findCollision(const VectorF& vec,Polytope::Collision *best)
+  G:\Torque3D\Engine\source\collision\polytope.cpp(393):               F32 dist = mDot(vr.point,vec);
+  G:\Torque3D\Engine\source\collision\polytope.cpp(419):            F32 fd = mDot(tf.plane,vec);
+  G:\Torque3D\Engine\source\collision\polytope.h(105):   void extrudeFace(S32 fi,const VectorF& vec,Polytope* out);
+  G:\Torque3D\Engine\source\collision\polytope.h(106):   bool findCollision(const VectorF& vec,Polytope::Collision *best);
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(271):   VectorPtr<Namespace*> vec;
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(273):   vec.reserve( 1024 );
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(302):         vec.push_back(stack[stack.size() - 1]);
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(309):   for(i = 0; i < vec.size(); i++)
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(311):      const char *className = vec[i]->mName;
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(312):      const char *superClassName = vec[i]->mParent ? vec[i]->mParent->mName : NULL;
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(323):         for(Entry *ewalk = vec[i]->mEntryList; ewalk; ewalk = ewalk->mNext)
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(334):         if ( !found && !vec[i]->isClass() )
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(342):         for(Entry *ewalk = vec[i]->mEntryList; ewalk; ewalk = ewalk->mNext)
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(355):      if(vec[i]->mEntryList == NULL && vec[i]->mClassRep == NULL)
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(366):      printClassHeader(vec[i]->mUsage, className, superClassName, false);
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(369):      printNamespaceEntries(vec[i], dumpScript, dumpEngine);
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(372):      AbstractClassRep *rep = vec[i]->mClassRep;
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(382):         AbstractClassRep *parentRep = vec[i]->mParent ? vec[i]->mParent->mClassRep : NULL;
+  G:\Torque3D\Engine\source\console\consoleDoc.cpp(449):         const char* field = vec[i]->mUsage;
+  G:\Torque3D\Engine\source\console\consoleInternal.cpp(1213):void Namespace::getEntryList(VectorPtr<Entry *> *vec)
+  G:\Torque3D\Engine\source\console\consoleInternal.cpp(1220):         vec->push_back(mHashTable[i]);
+  G:\Torque3D\Engine\source\console\consoleInternal.cpp(1222):   dQsort(vec->address(),vec->size(),sizeof(Namespace::Entry *),compareEntries);
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(337):   Vector<S32> *vec = (Vector<S32> *)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(338):   S32 buffSize = ( vec->size() * 15 ) + 16 ;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(343):   for (Vector<S32>::iterator itr = vec->begin(); itr != vec->end(); itr++)
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(358):   Vector<S32> *vec = (Vector<S32> *)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(360):   vec->clear();
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(369):         vec->push_back(value);
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(380):         vec->push_back(dAtoi(argv[i]));
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(415):   Vector<F32> *vec = (Vector<F32> *)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(416):   S32 buffSize = ( vec->size() * 15 ) + 16 ;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(421):   for (Vector<F32>::iterator itr = vec->begin(); itr != vec->end(); itr++)
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(436):   Vector<F32> *vec = (Vector<F32> *)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(438):   vec->clear();
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(447):         vec->push_back(value);
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(458):         vec->push_back(dAtof(argv[i]));
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(492):   Vector<bool> *vec = (Vector<bool>*)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(498):   for (Vector<bool>::iterator itr = vec->begin(); itr < vec->end(); itr++)
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(512):   Vector<bool> *vec = (Vector<bool>*)dptr;
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(514):   vec->clear();
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(523):         vec->push_back(value == 0 ? false : true);
+  G:\Torque3D\Engine\source\console\consoleTypes.cpp(534):         vec->push_back(dAtob(argv[i]));
+  G:\Torque3D\Engine\source\console\consoleXMLExport.cpp(144):         VectorPtr<Namespace::Entry *> vec;
+  G:\Torque3D\Engine\source\console\consoleXMLExport.cpp(146):         walk->getEntryList(&vec);
+  G:\Torque3D\Engine\source\console\consoleXMLExport.cpp(148):         for( NamespaceEntryListIterator compItr = vec.begin(); compItr != vec.end(); compItr++ )
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(466):   VectorPtr<Namespace*> vec;
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(467):   vec.reserve( 1024 );
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(496):         vec.push_back(stack[stack.size() - 1]);
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(503):   for(i = 0; i < vec.size(); i++)
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(505):      const char *className = vec[i]->mName;
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(506):      const char *superClassName = vec[i]->mParent ? vec[i]->mParent->mName : NULL;
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(516):      for( Namespace::Entry *ewalk = vec[i]->mEntryList; ewalk; ewalk = ewalk->mNext )
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(527):      if ( !found && !vec[i]->isClass() )
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(531):      if(vec[i]->mEntryList == NULL && vec[i]->mClassRep == NULL)
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(544):      if(   vec[i]->mUsage &&
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(545):            ( dStrstr( vec[i]->mUsage, "@hide" ) || dStrstr( vec[i]->mUsage, "@internal" ) ) )
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(549):      dumpClassHeader( stream, vec[i]->mUsage, className, superClassName );
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(558):      dumpNamespaceEntries( stream, vec[ i ], false );
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(562):      dumpNamespaceEntries( stream, vec[ i ], true );
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(569):      AbstractClassRep *rep = vec[i]->mClassRep;
+  G:\Torque3D\Engine\source\console\engineDoc.cpp(576):         AbstractClassRep *parentRep = vec[i]->mParent ? vec[i]->mParent->mClassRep : NULL;
+  G:\Torque3D\Engine\source\console\simObject.cpp(2448):   VectorPtr<Namespace::Entry *> vec(__FILE__, __LINE__);
+  G:\Torque3D\Engine\source\console\simObject.cpp(2449):   ns->getEntryList(&vec);
+  G:\Torque3D\Engine\source\console\simObject.cpp(2451):   for(Vector< Namespace::Entry* >::iterator j = vec.begin(); j != vec.end(); j++)
+  G:\Torque3D\Engine\source\console\simObject.cpp(2621):   VectorPtr<Namespace::Entry *> vec(__FILE__, __LINE__);
+  G:\Torque3D\Engine\source\console\simObject.cpp(2624):      ns->getEntryList(&vec);
+  G:\Torque3D\Engine\source\console\simObject.cpp(2628):   for(Vector<Namespace::Entry *>::iterator j = vec.begin(); j != vec.end(); j++)
+  G:\Torque3D\Engine\source\console\simObject.cpp(2649):      for(Vector<Namespace::Entry *>::iterator j = vec.begin(); j != vec.end(); j++)
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(381):void BitStream::writeNormalVector(const Point3F& vec, S32 bitCount)
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(383):   F32 phi   = mAtan2(vec.x, vec.y) / M_PI;
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(384):   F32 theta = mAtan2(vec.z, mSqrt(vec.x*vec.x + vec.y*vec.y)) / (M_PI/2.0);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(390):void BitStream::readNormalVector(Point3F *vec, S32 bitCount)
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(395):   vec->x = mSin(phi)*mCos(theta);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(396):   vec->y = mCos(phi)*mCos(theta);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(397):   vec->z = mSin(theta);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(400):Point3F BitStream::dumbDownNormal(const Point3F& vec, S32 bitCount)
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(405):   temp.writeNormalVector(vec, bitCount);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(413):void BitStream::writeVector( Point3F vec, F32 maxMag, S32 magBits, S32 normalBits )
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(415):   F32 mag = vec.len();
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(428):   vec *= 1.0f / mag;
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(429):   writeNormalVector( vec, normalBits );
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(553):   Point3F vec;
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(556):   vec = p - mCompressPoint;
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(557):   F32 dist = vec.len() * invScale;
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(572):      writeSignedInt(S32(vec.x * invScale + 0.5f),type);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(573):      writeSignedInt(S32(vec.y * invScale + 0.5f),type);
+  G:\Torque3D\Engine\source\core\stream\bitStream.cpp(574):      writeSignedInt(S32(vec.z * invScale + 0.5f),type);
+  G:\Torque3D\Engine\source\core\stream\bitStream.h(167):   void writeNormalVector(const Point3F& vec, S32 bitCount);
+  G:\Torque3D\Engine\source\core\stream\bitStream.h(168):   void readNormalVector(Point3F *vec, S32 bitCount);
+  G:\Torque3D\Engine\source\core\stream\bitStream.h(181):   static Point3F dumbDownNormal(const Point3F& vec, S32 bitCount);
+  G:\Torque3D\Engine\source\core\stream\bitStream.h(194):   void writeVector( Point3F vec, F32 maxMag, S32 magBits, S32 normalBits );
+  G:\Torque3D\Engine\source\core\virtualMountSystem.cpp(144):      RootToFSVec &vec = (*ritr).value;
+  G:\Torque3D\Engine\source\core\virtualMountSystem.cpp(145):      for (S32 i = vec.size() - 1;i >= 0;i--)
+  G:\Torque3D\Engine\source\core\virtualMountSystem.cpp(147):         if (vec[i].getPointer() == fs.getPointer())
+  G:\Torque3D\Engine\source\core\virtualMountSystem.cpp(148):            vec.erase(i);
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(249):   Point3F endPnt = event.pos + event.vec * 2000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(265):   if ( mSelRoad != NULL && mSelRoad->collideRay( event.pos, event.vec, &insertNodeIdx, &collisionPnt ) )
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(279):			if ( pRoad->collideRay( event.pos, event.vec, &insertNodeIdx, &collisionPnt ) )
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(293):      if ( pRoad && pRoad->collideRay( event.pos, event.vec, &insertNodeIdx, &collisionPnt ) )
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(621):      Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiMeshRoadEditorCtrl.cpp(948):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(254):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(267):   if ( mSelRiver != NULL && mSelRiver->collideRay( event.pos, event.vec, &insertNodeIdx, &collisionPnt ) )
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(281):         if ( riverPtr->collideRay( event.pos, event.vec, &insertNodeIdx, &collisionPnt ) )
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(643):      Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(660):         if ( pRiver->collideRay( event.pos, event.vec ) )
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(743):   clickLine.d = event.vec;
+  G:\Torque3D\Engine\source\environment\editors\guiRiverEditorCtrl.cpp(1089):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRoadEditorCtrl.cpp(565):      Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRoadEditorCtrl.cpp(582):      Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\environment\editors\guiRoadEditorCtrl.cpp(865):   Point3F endPnt = event.pos + event.vec * 10000.0f;
+  G:\Torque3D\Engine\source\environment\meshRoad.cpp(283):Point3F MeshRoadConvex::support(const VectorF& vec) const
+  G:\Torque3D\Engine\source\environment\meshRoad.cpp(285):   F32 bestDot = mDot( verts[0], vec );
+  G:\Torque3D\Engine\source\environment\meshRoad.cpp(290):      F32 newD = mDot(verts[i], vec);
+  G:\Torque3D\Engine\source\environment\meshRoad.h(103):   Point3F support(const VectorF& vec) const;
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(224):      VectorF vec(0,1,0);
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(225):      MathUtils::vectorRotateZAxis( vec, radians );
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(227):      end.x = start.x = mLastBrushPoint.x + vec.x * mSize;
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(228):      end.y = start.y = mLastBrushPoint.y + vec.y * mSize;
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(552):   Point3F end( event_.pos + ( event_.vec * 10000.0f ) );
+  G:\Torque3D\Engine\source\forest\editor\forestSelectionTool.cpp(291):   Point3F endPnt = evt.pos + evt.vec * 1000.0f;   
+  G:\Torque3D\Engine\source\gui\core\guiTypes.h(74):   Point3F     vec;
+  G:\Torque3D\Engine\source\gui\core\guiTypes.h(78):      : vec( 0.f, 0.f, 0.f ),
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(732):      Point3F vec;
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(738):      zRot.getColumn( 1, &vec );
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(740):      mFakeSun->setDirection( vec );
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(741):      //mFakeSun->setPosition( vec * -10000.0f );
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(1127):      Point3F vec;
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(1133):      cameraMatrix->getColumn( 1, &vec );
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(1134):      cameraMatrix->setColumn( 3, mOrbitPos - vec*mOrbitDist );
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(293):      // get the eye pos and the mouse vec from that...
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(300):      gui3DMouseEvent.vec = wp - smCamPos;
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(301):      gui3DMouseEvent.vec.normalizeSafe();
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(305):      // get the eye pos and the mouse vec from that...
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(312):      smCamMatrix.getColumn( 1, &(gui3DMouseEvent.vec) );
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(482):            Point3F end = start + mLastEvent.vec * 4000.0f;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(446):   Point3F end = camPos + event.vec * smProjectDistance;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(615):         Point3F end = camPos + event.vec * smProjectDistance;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(741):         clickLine.direction = event.vec;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(769):         if ( plane.intersect( event.pos, event.vec, &intersectPnt ) )
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(801):         if ( plane.intersect( event.pos, event.vec, &intersectPnt ) )
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(815):      Point3F end = camPos + event.vec * smProjectDistance;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(888):         clickLine.direction = event.vec;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(913):            if ( mMouseCollidePlane.intersect( event.pos, event.vec, &intersectPnt ) )
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(927):            clickLine.direction = event.vec;
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(938):         if ( mMouseCollidePlane.intersect( event.pos, event.vec, &intersectPnt ) )
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1577):   if ( gServerContainer.castRay( event.pos, event.pos + event.vec * 10000.0f, StaticShapeObjectType, &ri, &GuiConvexEditorCtrl::_cursorCastCallback ) &&
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1600):   Point3F end( start + event.vec * 10000.0f );
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1756):      Point3F end( event.pos + event.vec * 10000.0f );      
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1768):         objMat.setPosition( event.pos + event.vec * 100.0f );      
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1885):      Point3F end( start + event.vec * 10000.0f );
+  G:\Torque3D\Engine\source\gui\worldEditor\guiConvexShapeEditorCtrl.cpp(1922):   Point3F end( event.pos + event.vec * 10000.0f );
+  G:\Torque3D\Engine\source\gui\worldEditor\guiDecalEditorCtrl.cpp(161):   Point3F end = start + event.vec * 3000.0f; // use visible distance here??
+  G:\Torque3D\Engine\source\gui\worldEditor\guiDecalEditorCtrl.cpp(319):   Point3F end = start + event.vec * 3000.0f; // use visible distance here??
+  G:\Torque3D\Engine\source\gui\worldEditor\guiDecalEditorCtrl.cpp(604):   Point3F endPnt = event.pos + event.vec * 3000.0f;
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainActions.cpp(515):      Point3F end = start + event.vec * 1000;
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(634):      VectorF vec(0,1,0);
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(635):      MathUtils::vectorRotateZAxis( vec, radians );
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(637):      start.x = end.x = mousePos.x + vec.x * squareSize * (F32)mSize.x * 0.5f;
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(638):      start.y = end.y = mousePos.y + vec.y * squareSize * (F32)mSize.y * 0.5f;
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1192):      tvec = evt.vec;
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1194):      mMousePlane.intersect( evt.pos, evt.vec, &pos ); 
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1202):   Point3F end( evt.pos + ( evt.vec * 10000.0f ) );
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1217):   //Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(712):         event.vec = wp - smCamPos;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(713):         event.vec.normalizeSafe();
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(714):         event.vec *= viewdist;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(715):         sel->offset( Point3F( event.pos - center ) += event.vec, mGridSnap ? mGridPlaneSize : 0.f );
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(1079):      Point3F endPnt = event.pos + event.vec * smProjectDistance;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(1110):      Point3F endPnt = event.pos + event.vec * smProjectDistance;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(2581):      Point3F vec;
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(2582):      mLastCameraQuery.cameraMatrix.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(2583):      vec.neg();
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(2584):      data.mPolyList.mNormal.set(vec);
+  G:\Torque3D\Engine\source\math\glmMatrix.h(557):   VectorF vec;
+  G:\Torque3D\Engine\source\math\glmMatrix.h(558):   getColumn( 1, &vec );
+  G:\Torque3D\Engine\source\math\glmMatrix.h(559):   return vec;
+  G:\Torque3D\Engine\source\math\glmMatrix.h(564):   VectorF vec;
+  G:\Torque3D\Engine\source\math\glmMatrix.h(565):   getColumn( 0, &vec );
+  G:\Torque3D\Engine\source\math\glmMatrix.h(566):   return vec;
+  G:\Torque3D\Engine\source\math\glmMatrix.h(571):   VectorF vec;
+  G:\Torque3D\Engine\source\math\glmMatrix.h(572):   getColumn( 2, &vec );
+  G:\Torque3D\Engine\source\math\glmMatrix.h(573):   return vec;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(332):void getAnglesFromVector( const VectorF &vec, F32 &yawAng, F32 &pitchAng )
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(334):   yawAng = mAtan2( vec.x, vec.y );
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(338):   if( mFabs(vec.x) > mFabs(vec.y) )
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(339):      pitchAng = mAtan2( mFabs(vec.z), mFabs(vec.x) );
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(341):      pitchAng = mAtan2( mFabs(vec.z), mFabs(vec.y) );
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(342):   if( vec.z < 0.0f )
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(348):void getVectorFromAngles( VectorF &vec, F32 yawAng, F32 pitchAng )
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(361):   vec = pnt;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(470):   Point3F vec;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(471):   vec.x = (in.x - view.point.x) * 2.0f / view.extent.x - 1.0f;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(472):   vec.y = -(in.y - view.point.y) * 2.0f / view.extent.y + 1.0f;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(473):   vec.z = (znear + in.z * (zfar - znear))/zfar;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(475):   invWorldProjection.mulV(vec);
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(476):   vec *= 1.0f + in.z * zfar;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(479):   (*out) += vec;
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(1148):      const Point3F &vec = verts[i];
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(1152):      F32 theta = mAtan2( vec.y, vec.x );
+  G:\Torque3D\Engine\source\math\mathUtils.cpp(1154):      if ( vec.y < 0.0f )
+  G:\Torque3D\Engine\source\math\mathUtils.h(145):   void getAnglesFromVector( const VectorF &vec, F32 &yawAng, F32 &pitchAng );
+  G:\Torque3D\Engine\source\math\mathUtils.h(156):   void getVectorFromAngles( VectorF &vec, F32 yawAng, F32 pitchAng );
+  G:\Torque3D\Engine\source\math\mMatrix.h(545):   VectorF vec;
+  G:\Torque3D\Engine\source\math\mMatrix.h(546):   getColumn( 1, &vec );
+  G:\Torque3D\Engine\source\math\mMatrix.h(547):   return vec;
+  G:\Torque3D\Engine\source\math\mMatrix.h(552):   VectorF vec;
+  G:\Torque3D\Engine\source\math\mMatrix.h(553):   getColumn( 0, &vec );
+  G:\Torque3D\Engine\source\math\mMatrix.h(554):   return vec;
+  G:\Torque3D\Engine\source\math\mMatrix.h(559):   VectorF vec;
+  G:\Torque3D\Engine\source\math\mMatrix.h(560):   getColumn( 2, &vec );
+  G:\Torque3D\Engine\source\math\mMatrix.h(561):   return vec;
+  G:\Torque3D\Engine\source\math\mPoint.cpp(70):   Point3F vec( 0.0f, 0.0f, 0.0f );
+  G:\Torque3D\Engine\source\math\mPoint.cpp(71):   vec[idx] = 1.0f;
+  G:\Torque3D\Engine\source\math\mPoint.cpp(73):   Point3F outVec = mCross( inVec, vec );
+  G:\Torque3D\Engine\source\math\mPoint3.h(1040):inline Point3F mNormalize( const Point3F &vec )
+  G:\Torque3D\Engine\source\math\mPoint3.h(1042):   Point3F out( vec );
+  G:\Torque3D\Engine\source\navigation\guiNavEditorCtrl.cpp(304):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\navigation\guiNavEditorCtrl.cpp(412):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\navigation\guiNavEditorCtrl.cpp(581):   Point3F endPnt = event.pos + event.vec * 1000.0f;
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1728):      VectorF vec;
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1730):      vec.x = mRandF( -1.0f, 1.0f );
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1731):      vec.y = mRandF( -1.0f, 1.0f );
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1732):      vec.z = mRandF( -1.0f, 1.0f );
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1734):      vec.normalizeSafe();
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1736):      f[0] = U8_MAX * ( ( 1.0f + vec.x ) * 0.5f );
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1737):      f[1] = U8_MAX * ( ( 1.0f + vec.y ) * 0.5f );
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1738):      f[2] = U8_MAX * ( ( 1.0f + vec.z ) * 0.5f );
+  G:\Torque3D\Engine\source\scene\sceneObject.h(449):      /// @param   vec   Vector along which collision occurred
+  G:\Torque3D\Engine\source\scene\sceneObject.h(450):      virtual void onCollision( SceneObject *object, const VectorF &vec ) {}
+  G:\Torque3D\Engine\source\scene\sceneObject.h(595):      /// @param   vec   Velocity vector (Impulse force F = m * v)   
+  G:\Torque3D\Engine\source\scene\sceneObject.h(596):      virtual void applyImpulse( const Point3F &pos, const VectorF &vec ) {}
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.cpp(369):   Vector<String> vec;
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.cpp(370):   vec.push_back( "isBack"); 
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.cpp(371):   return vec;
+  G:\Torque3D\Engine\source\T3D\decal\decalDataFile.cpp(252):			// onload set instances should get added to the appropriate vec
+  G:\Torque3D\Engine\source\T3D\gameBase\gameBase.cpp(401):      Point3F vec;
+  G:\Torque3D\Engine\source\T3D\gameBase\gameBase.cpp(402):      mCross(camInfo->orientation,getVelocity(),&vec);
+  G:\Torque3D\Engine\source\T3D\gameBase\gameBase.cpp(403):      wVelocity = (vec.len() * camInfo->fov) /
+  G:\Torque3D\Engine\source\T3D\physics\physicsDebris.cpp(587):void PhysicsDebris::applyImpulse( const Point3F &pos, const VectorF &vec )
+  G:\Torque3D\Engine\source\T3D\physics\physicsDebris.cpp(591):      fragment->body->applyImpulse( pos, vec );
+  G:\Torque3D\Engine\source\T3D\physics\physicsDebris.h(133):   void applyImpulse( const Point3F &pos, const VectorF &vec );
+  G:\Torque3D\Engine\source\T3D\physics\physicsShape.cpp(845):void PhysicsShape::applyImpulse( const Point3F &pos, const VectorF &vec )
+  G:\Torque3D\Engine\source\T3D\physics\physicsShape.cpp(848):      mPhysicsRep->applyImpulse( pos, vec );
+  G:\Torque3D\Engine\source\T3D\physics\physicsShape.h(247):   void applyImpulse( const Point3F &pos, const VectorF &vec );
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(714):   Point3F vec, pos;
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(994):   VectorF vp,vec;
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(997):   eye.mulV(vp,&vec);
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(1017):   Point3F ep = sp + vec + offset;
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(1024):      F32 t = collision.t - (-mDot(vec, collision.normal) / vec.len()) * 0.1;
+  G:\Torque3D\Engine\source\T3D\turret\turretShape.cpp(1026):         ep = sp + offset + (vec * t);
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(1058):   VectorF vp,vec;
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(1061):   eye.mulV(vp,&vec);
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(1081):   Point3F ep = sp + vec + offset + mCameraOffset;
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(1088):      F32 t = collision.t - (-mDot(vec, collision.normal) / vec.len()) * 0.1;
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(1090):         ep = sp + offset + mCameraOffset + (vec * t);
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1154):         Point3F sp,vec;
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1156):         currMatrix.mulV(VectorF(0,0,-wheel->spring->length),&vec);
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1158):         Point3F ep = sp + (vec * (1 + ts));
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1359):         Point3F sp,vec;
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1361):         mObjToWorld.mulV(VectorF(0,0,-wheel->spring->length),&vec);
+  G:\Torque3D\Engine\source\T3D\vehicles\wheeledVehicle.cpp(1362):         Point3F ep = sp + (vec * wheel->extension);
+  G:\Torque3D\Engine\source\T3D\aiPlayer.cpp(299):void AIPlayer::getMuzzleVector(U32 imageSlot,VectorF* vec)
+  G:\Torque3D\Engine\source\T3D\aiPlayer.cpp(309):      if (getCorrectedAim(mat, vec))
+  G:\Torque3D\Engine\source\T3D\aiPlayer.cpp(317):   mat.getColumn(1,vec);
+  G:\Torque3D\Engine\source\T3D\aiPlayer.h(173):   void getMuzzleVector(U32 imageSlot,VectorF* vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(503):   Point3F vec,pos;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(639):            vec = objPos - pos;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(640):            vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\camera.cpp(642):            MathUtils::getAnglesFromVector(vec, yaw, pitch);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(739):         mObjToWorld.getColumn(0,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(740):         posVec = vec * move->x * TickSec * scale + vec * (strafeMode ? move->yaw * 2.0f * TickSec * scale : 0.0f);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(741):         mObjToWorld.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(742):         posVec += vec * move->y * TickSec * scale + vec * move->roll * TickSec * scale;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(743):         mObjToWorld.getColumn(2,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(744):         posVec += vec * move->z * TickSec * scale - vec * (strafeMode ? move->pitch * 2.0f * TickSec * scale : 0.0f);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(753):         mObjToWorld.getColumn(0,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(754):         vec.z = 0;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(755):         vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\camera.cpp(756):         vec = vec * move->x * TickSec * scale + (strafeMode ? vec * move->yaw * 2.0f * TickSec * scale : Point3F(0, 0, 0));
+  G:\Torque3D\Engine\source\T3D\camera.cpp(757):         posVec = vec;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(759):         mObjToWorld.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(760):         vec.z = 0;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(761):         if (vec.isZero())
+  G:\Torque3D\Engine\source\T3D\camera.cpp(763):            mObjToWorld.getColumn(2,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(764):            vec.z = 0;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(766):         vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\camera.cpp(767):         vec = vec * move->y * TickSec * scale - (strafeMode ? vec * move->pitch * 2.0f * TickSec * scale : Point3F(0, 0, 0));
+  G:\Torque3D\Engine\source\T3D\camera.cpp(768):         posVec += vec;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(916):      Point3F vec = objPos - pos;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(917):      vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\camera.cpp(919):      MathUtils::getAnglesFromVector(vec, yaw, pitch);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1611):   Point3F pos,vec;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1612):   mat.getColumn(1, &vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1614):   Point3F rot(-mAtan2(vec.z, mSqrt(vec.x * vec.x + vec.y * vec.y)), 0.0f, -mAtan2(-vec.x, vec.y));
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1626):   Point3F pos,vec;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1627):   mat.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1629):   Point3F rot(-mAtan2(vec.z, mSqrt(vec.x*vec.x + vec.y*vec.y)),0,-mAtan2(-vec.x,vec.y));
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1788):   Point3F vec;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1790):   vec = pos - mPosition;
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1791):   vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\camera.cpp(1793):   MathUtils::getAnglesFromVector(vec, yaw, pitch);
+  G:\Torque3D\Engine\source\T3D\convexShape.cpp(60):Point3F ConvexShapeCollisionConvex::support( const VectorF &vec ) const
+  G:\Torque3D\Engine\source\T3D\convexShape.cpp(67):	// This doesn't deal with the case that the farthest plane along vec is also
+  G:\Torque3D\Engine\source\T3D\convexShape.cpp(71):	F32 bestDot = mDot( pointList[0], vec );
+  G:\Torque3D\Engine\source\T3D\convexShape.cpp(77):		F32 newD = mDot( pointList[i], vec );
+  G:\Torque3D\Engine\source\T3D\convexShape.h(61):	Point3F support(const VectorF& vec) const;
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(88):   char *vec = Con::getArgBuffer(32);
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(94):   dSprintf(vec, 32, "%g %g %g", ray.x, ray.y, ray.z);
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(96):   Con::executef( (SimObject*)this, func, sp, wp, vec );
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(155):         Point3F vec = worldPoint - pos;
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(157):         vec.normalizeSafe();
+  G:\Torque3D\Engine\source\T3D\gameTSCtrl.cpp(158):         lineTestEnd = pos + vec * 1000;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(135):	Point3F vec = mCameraPos;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(136):	vec -= mOrbitPos;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(137):	transstep *= vec.len() / nominalDistance;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(294):      Point3F vec;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(297):      mCameraMatrix.getColumn(1, &vec);
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(298):      vec *= mOrbitDist;
+  G:\Torque3D\Engine\source\T3D\guiMaterialPreview.cpp(299):      mCameraPos = mOrbitPos - vec;
+  G:\Torque3D\Engine\source\T3D\guiObjectView.cpp(448):   Point3F vec;
+  G:\Torque3D\Engine\source\T3D\guiObjectView.cpp(454):   mCameraMatrix.getColumn( 1, &vec );
+  G:\Torque3D\Engine\source\T3D\guiObjectView.cpp(455):   vec *= mOrbitDist;
+  G:\Torque3D\Engine\source\T3D\guiObjectView.cpp(456):   mCameraPos = mOrbitPos - vec;
+  G:\Torque3D\Engine\source\T3D\item.cpp(532):void Item::applyImpulse(const Point3F&,const VectorF& vec)
+  G:\Torque3D\Engine\source\T3D\item.cpp(536):   vel.x = vec.x / mDataBlock->mass;
+  G:\Torque3D\Engine\source\T3D\item.cpp(537):   vel.y = vec.y / mDataBlock->mass;
+  G:\Torque3D\Engine\source\T3D\item.cpp(538):   vel.z = vec.z / mDataBlock->mass;
+  G:\Torque3D\Engine\source\T3D\item.cpp(633):      VectorF vec;
+  G:\Torque3D\Engine\source\T3D\item.cpp(634):      mat.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\item.cpp(635):      tmat.set(EulerF(0,0,-mAtan2(-vec.x,vec.y)));
+  G:\Torque3D\Engine\source\T3D\item.cpp(1152):            VectorF vec = delta.pos - cp;
+  G:\Torque3D\Engine\source\T3D\item.cpp(1153):            F32 vl = vec.len();
+  G:\Torque3D\Engine\source\T3D\item.h(179):   void applyImpulse(const Point3F& pos,const VectorF& vec);
+  G:\Torque3D\Engine\source\T3D\player.cpp(4461):   Point3F pos,vec;
+  G:\Torque3D\Engine\source\T3D\player.cpp(4462):   getTransform().getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\player.cpp(4464):   Point3F rot(0.0f,0.0f,-mAtan2(-vec.x,vec.y));
+  G:\Torque3D\Engine\source\T3D\player.cpp(5371):   Point3F pos,vec;
+  G:\Torque3D\Engine\source\T3D\player.cpp(5372):   mat.getColumn(1,&vec);
+  G:\Torque3D\Engine\source\T3D\player.cpp(5374):   Point3F rot(0.0f, 0.0f, -mAtan2(-vec.x,vec.y));
+  G:\Torque3D\Engine\source\T3D\player.cpp(5685):void Player::getMuzzleVector(U32 imageSlot,VectorF* vec)
+  G:\Torque3D\Engine\source\T3D\player.cpp(5700):         if (getCorrectedAim(mat, vec))
+  G:\Torque3D\Engine\source\T3D\player.cpp(5709):   mat.getColumn(1,vec);
+  G:\Torque3D\Engine\source\T3D\player.cpp(5845):void Player::applyImpulse(const Point3F&,const VectorF& vec)
+  G:\Torque3D\Engine\source\T3D\player.cpp(5847):	AssertFatal( !mIsNaN( vec ), "Player::applyImpulse() - The vector is NaN!" );
+  G:\Torque3D\Engine\source\T3D\player.cpp(5851):   vel.x = vec.x / getMass();
+  G:\Torque3D\Engine\source\T3D\player.cpp(5852):   vel.y = vec.y / getMass();
+  G:\Torque3D\Engine\source\T3D\player.cpp(5853):   vel.z = vec.z / getMass();
+  G:\Torque3D\Engine\source\T3D\player.h(694):   virtual void getMuzzleVector(U32 imageSlot,VectorF* vec);
+  G:\Torque3D\Engine\source\T3D\player.h(700):   /// Apply an impulse at the given point, with magnitude/direction of vec
+  G:\Torque3D\Engine\source\T3D\player.h(701):   void applyImpulse(const Point3F& pos,const VectorF& vec);
+  G:\Torque3D\Engine\source\T3D\rigidShape.cpp(918):   VectorF vp,vec;
+  G:\Torque3D\Engine\source\T3D\rigidShape.cpp(921):   eye.mulV(vp,&vec);
+  G:\Torque3D\Engine\source\T3D\rigidShape.cpp(941):   Point3F ep = sp + vec + offset + mCameraOffset;
+  G:\Torque3D\Engine\source\T3D\rigidShape.cpp(949):         F32 t = collision.t - (-mDot(vec, collision.normal) / vec.len()) * 0.1;
+  G:\Torque3D\Engine\source\T3D\rigidShape.cpp(951):            ep = sp + offset + mCameraOffset + (vec * t);
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(89):IMPLEMENT_CALLBACK( ShapeBaseData, onImpact, void, ( ShapeBase* obj, SceneObject *collObj, VectorF vec, F32 len ), ( obj, collObj, vec, len ),
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(94):   "@param vec Collision impact vector\n"
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(97):IMPLEMENT_CALLBACK( ShapeBaseData, onCollision, void, ( ShapeBase* obj, SceneObject *collObj, VectorF vec, F32 len ), ( obj, collObj, vec, len ),
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(101):   "@param vec Collision impact vector\n"
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1195):void ShapeBase::onImpact(SceneObject* obj, const VectorF& vec)
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1198):      mDataBlock->onImpact_callback( this, obj, vec, vec.len() );
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1201):void ShapeBase::onImpact(const VectorF& vec)
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1204):      mDataBlock->onImpact_callback( this, NULL, vec, vec.len() );
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1927):      VectorF vp,vec;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1930):      eye.mulV(vp,&vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1951):      Point3F ep = sp + minVec + vec + offset;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1962):         F32 vecLenSq = vec.lenSquared();
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1963):         F32 adj = (-mDot(vec, collision.normal) / vecLenSq) * 0.1;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(1968):            ep = sp + offset + (vec * newPos);
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(2826):void ShapeBase::queueCollision( SceneObject *obj, const VectorF &vec)
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(2839):            ptr->vector = vec;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(2871):   ptr->vector = vec;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(2904):void ShapeBase::onCollision( SceneObject *object, const VectorF &vec )
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(2907):      mDataBlock->onCollision_callback( this, object, vec, vec.len() );
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4122):   VectorF vec(0, 1, 0);
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4124):      object->getMuzzleVector(slot, &vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4126):   return vec;
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4189):DefineEngineMethod( ShapeBase, applyImpulse, bool, ( Point3F pos, Point3F vec ),,
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4193):   "@param vec impulse momentum (velocity * mass)\n"
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4196):   object->applyImpulse( pos, vec );
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4666):DefineEngineMethod( ShapeBase, setDamageVector, void, ( Point3F vec ),,
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4672):   "@param vec damage direction vector\n\n"
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4678):   vec.normalize();
+  G:\Torque3D\Engine\source\T3D\shapeBase.cpp(4679):   object->setDamageDir( vec );
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(650):   DECLARE_CALLBACK( void, onImpact, ( ShapeBase* obj, SceneObject* collObj, VectorF vec, F32 len ) );
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(651):   DECLARE_CALLBACK( void, onCollision, ( ShapeBase* obj, SceneObject* collObj, VectorF vec, F32 len ) );
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(937):   /// @param   vec      Vector along which collision occurs
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(938):   void queueCollision( SceneObject *object, const VectorF &vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(941):   virtual void onCollision( SceneObject *object, const VectorF &vec );
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1108):   virtual void onImpact(SceneObject* obj, const VectorF& vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1109):   virtual void onImpact(const VectorF& vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1271):   /// @param   vec   Vector indicating the direction of the damage
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1272):   void setDamageDir(const VectorF& vec)  { damageDir = vec; }
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1560):   /// @param   vec   Muzzle vector (out)
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1561):   virtual void getMuzzleVector(U32 imageSlot,VectorF* vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1660):   virtual void getRenderMuzzleVector(U32 imageSlot,VectorF* vec);
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1695):   /// @param   vec   Velocity vector (Impulse force F = m * v)
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1696):   virtual void applyImpulse(const Point3F& pos,const VectorF& vec);
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1769):void ShapeBase::getMuzzleVector(U32 imageSlot,VectorF* vec)
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1782):         if (getCorrectedAim(mat, vec))
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1786):   mat.getColumn(1,vec);
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1797):void ShapeBase::getRenderMuzzleVector(U32 imageSlot,VectorF* vec)
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1810):         if (getCorrectedAim(mat, vec))
+  G:\Torque3D\Engine\source\T3D\shapeImage.cpp(1814):   mat.getColumn(1,vec);
+  G:\Torque3D\Engine\source\T3D\tsStatic.cpp(1075):Point3F TSStaticPolysoupConvex::support(const VectorF& vec) const
+  G:\Torque3D\Engine\source\T3D\tsStatic.cpp(1077):   F32 bestDot = mDot( verts[0], vec );
+  G:\Torque3D\Engine\source\T3D\tsStatic.cpp(1082):      F32 newD = mDot(verts[i], vec);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(157):template<class T> inline MatrixF vecToMatrixF(const domListOfFloats& vec) { return MatrixF(true); }
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(160):template<> inline MatrixF vecToMatrixF<domTranslate>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(163):   mat.setPosition(Point3F(vec[0], vec[1], vec[2]));
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(168):template<> inline MatrixF vecToMatrixF<domScale>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(171):   mat.scale(Point3F(vec[0], vec[1], vec[2]));
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(176):template<> inline MatrixF vecToMatrixF<domRotate>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(178):   AngAxisF aaxis(Point3F(vec[0], vec[1], vec[2]), -(vec[3] * M_PI) / 180.0f);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(185):template<> inline MatrixF vecToMatrixF<domMatrix>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(189):      mat[i] = vec[i];
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(195):template<> inline MatrixF vecToMatrixF<domSkew>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(197):   F32 angle = -(vec[0] * M_PI) / 180.0f;
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(198):   Point3F rotAxis(vec[1], vec[2], vec[3]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(199):   Point3F transAxis(vec[4], vec[5], vec[6]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(232):template<> inline MatrixF vecToMatrixF<domLookat>(const domListOfFloats& vec)
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(234):   Point3F eye(vec[0], vec[1], vec[2]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(235):   Point3F target(vec[3], vec[4], vec[5]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(236):   Point3F up(vec[6], vec[7], vec[8]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(784):      T vec(this->defaultVal);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(787):         vec = *(T*)const_cast<daeElement*>(this->element)->getValuePointer();
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(796):                     animData->interpValue(time, iValue, &vec[animData->targetValueOffset + iValue]);
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(801):      return vec;
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(1502):   IceMaths::Ray vec( Point(s.x, s.y, s.z), dir.Normalize() );
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(1514):   bool safety = ray.Collide( vec, *mOptTree );
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(503):template<class T> S32 eraseStates(Vector<T>& vec, const TSIntegerSet& matters, S32 base, S32 numKeyframes, S32 index=-1)
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(522):      if ((dest + count) < vec.size())
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(523):         dCopyArray(&vec[dest], &vec[dest + count], vec.size() - (dest + count));
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(524):      vec.decrement(count);
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1197):static void _PadMoveAndTrim(Vector<T*>& vec, S32 offset, S32 count,
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1202):      vec.insert( offset + count, NULL );
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1205):   T* tmp = vec[offset + oldIndex];
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1206):   vec.erase( offset + oldIndex );
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1207):   vec.insert( offset + newIndex, tmp );
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1212):      if ( vec[offset + i] )
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1215):         vec.erase( offset + i );
+  Matching lines: 446    Matching files: 67    Total files searched: 1856

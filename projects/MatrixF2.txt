@@ -1,0 +1,52 @@
+Find all "glmMatrixF::", Subfolders, Find Results 1, Entire Solution, ""
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(35):const glmMatrixF glmMatrixF::Identity( true );
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(39):void glmMatrixF::transposeTo(glm::mat4 *matrix) const
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(59):bool glmMatrixF::isAffine() const
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(115):bool glmMatrixF::fullInverse()
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(166):EulerF glmMatrixF::toEuler() const
+  
+  G:\Torque3D\Engine\source\math\glmMatrix.cpp(187):void glmMatrixF::dumpMatrix(const char *caption /* =NULL */) const
+  
+  G:\Torque3D\Engine\source\math\glmMatrix.h(233):inline glmMatrixF::glmMatrixF(bool _identity)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(239):inline glmMatrixF::glmMatrixF( const EulerF &e )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(244):inline glmMatrixF::glmMatrixF( const EulerF &e, const Point3F& p )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(249):inline glmMatrixF& glmMatrixF::set( const EulerF &e)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(256):inline glmMatrixF& glmMatrixF::set( const EulerF &e, const Point3F& p)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(262):inline glmMatrixF& glmMatrixF::setCrossProduct( const Point3F &p)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(273):inline glmMatrixF& glmMatrixF::setTensorProduct( const Point3F &p, const Point3F &q)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(289):inline bool glmMatrixF::isIdentity() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(310):inline glmMatrixF& glmMatrixF::identity()
+  G:\Torque3D\Engine\source\math\glmMatrix.h(332):inline glmMatrixF& glmMatrixF::inverse()
+  G:\Torque3D\Engine\source\math\glmMatrix.h(338):inline void glmMatrixF::invertTo( glmMatrixF *out )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(343):inline glmMatrixF& glmMatrixF::affineInverse()
+  G:\Torque3D\Engine\source\math\glmMatrix.h(350):inline glmMatrixF& glmMatrixF::transpose()
+  G:\Torque3D\Engine\source\math\glmMatrix.h(356):inline glmMatrixF& glmMatrixF::scale(const Point3F& p)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(362):inline Point3F glmMatrixF::getScale() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(371):inline void glmMatrixF::normalize()
+  G:\Torque3D\Engine\source\math\glmMatrix.h(376):inline glmMatrixF& glmMatrixF::mul( const glmMatrixF &a )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(385):inline glmMatrixF& glmMatrixF::mulL( const glmMatrixF &a )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(394):inline glmMatrixF& glmMatrixF::mul( const glmMatrixF &a, const glmMatrixF &b )
+ 
+   
+  G:\Torque3D\Engine\source\math\glmMatrix.h(420):inline void glmMatrixF::mul( Point4F& p ) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(427):inline void glmMatrixF::mulP( Point3F& p) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(435):inline void glmMatrixF::mulP( const Point3F &p, Point3F *d) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(441):inline void glmMatrixF::mulV( VectorF& v) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(449):inline void glmMatrixF::mulV( const VectorF &v, Point3F *d) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(455):inline void glmMatrixF::mul(Box3F& b) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(460):inline glmMatrixF& glmMatrixF::add( const glmMatrixF& a )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(468):inline void glmMatrixF::getColumn(S32 col, Point4F *cptr) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(476):inline void glmMatrixF::getColumn(S32 col, Point3F *cptr) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(483):inline void glmMatrixF::setColumn(S32 col, const Point4F &cptr)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(491):inline void glmMatrixF::setColumn(S32 col, const Point3F &cptr)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(499):inline void glmMatrixF::getRow(S32 col, Point4F *cptr) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(508):inline void glmMatrixF::getRow(S32 col, Point3F *cptr) const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(516):inline void glmMatrixF::setRow(S32 col, const Point4F &cptr)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(525):inline void glmMatrixF::setRow(S32 col, const Point3F &cptr)
+  G:\Torque3D\Engine\source\math\glmMatrix.h(533):inline Point3F glmMatrixF::getPosition() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(538):inline void glmMatrixF::displace( const Point3F &delta )
+  G:\Torque3D\Engine\source\math\glmMatrix.h(545):inline VectorF glmMatrixF::getForwardVector() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(552):inline VectorF glmMatrixF::getRightVector() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(559):inline VectorF glmMatrixF::getUpVector() const
+  G:\Torque3D\Engine\source\math\glmMatrix.h(577):inline glmMatrixF& glmMatrixF::operator *= ( const glmMatrixF &m1 )
+  Matching lines: 55    Matching files: 2    Total files searched: 2552

@@ -1,0 +1,345 @@
+Find all "TODO", Whole word, Subfolders, Find Results 1, Current Project: Tools\CMake\Release_3.9.vcxproj, ""
+  G:\Torque3D\Engine\source\collision\clippedPolyList.cpp(227):   // TODO: Re-visit this, since it obviously does not work correctly, and than
+  G:\Torque3D\Engine\source\collision\concretePolyList.cpp(181):   // TODO: There are potential performance issues
+  G:\Torque3D\Engine\source\collision\convex.h(80):// TODO: This sucks... replace with registration object
+  G:\Torque3D\Engine\source\collision\depthSortList.cpp(28):#include "core/stream/fileStream.h" // TODO, remove this
+  G:\Torque3D\Engine\source\console\consoleObject.h(230)://TODO: move over to EngineTypeNetInfo
+  G:\Torque3D\Engine\source\console\consoleObject.h(237)://TODO: move over to EngineTypeNetInfo
+  G:\Torque3D\Engine\source\console\engineAPI.h(78)://TODO: Disable warning for extern "C" functions returning UDTs for now; need to take a closer look at this
+  G:\Torque3D\Engine\source\console\engineTypes.h(34)://TODO: documentation
+  G:\Torque3D\Engine\source\console\engineXMLExport.cpp(197):         //TODO: for now we store string literals in ASCII; needs to be sorted out
+  G:\Torque3D\Engine\source\console\engineXMLExport.cpp(250):         //TODO: struct type default argument values
+  G:\Torque3D\Engine\source\console\persistenceManager.cpp(528):                  // TODO: make sure this doesn't leak
+  G:\Torque3D\Engine\source\console\persistenceManager.cpp(830):   // TODO: Test all of the SimSet's that this object belongs to
+  G:\Torque3D\Engine\source\console\persistenceManager.cpp(1417):                  // TODO: This should be wrapped in a helper method... probably.
+  G:\Torque3D\Engine\source\console\persistenceManager.cpp(1496):               // TODO: This should be wrapped in a helper method... probably.
+  G:\Torque3D\Engine\source\console\simObject.cpp(879):            // TODO: paxorr: abstract this into a better setData / getData that considers prot fields.
+  G:\Torque3D\Engine\source\console\simObject.cpp(2510):            //TODO: need to have script callbacks set up proper return type info
+  G:\Torque3D\Engine\source\console\simObjectMemento.cpp(82):   // TODO: We could potentially make this faster by
+  G:\Torque3D\Engine\source\console\telnetDebugger.cpp(178):      // TODO: This assumes that the OS file names are case 
+  G:\Torque3D\Engine\source\console\telnetDebugger.cpp(583):      // TODO: This assumes that the OS file names are case 
+  G:\Torque3D\Engine\source\core\stream\fileStream.cpp(125):      return(getMax((U32)(mFile->getSize()), mBuffTail + 1));  ///<@todo U64 vs U32 issue
+  G:\Torque3D\Engine\source\core\stream\tStream.h(34)://TODO: error handling
+  G:\Torque3D\Engine\source\core\strings\stringFunctions.cpp(40)://TODO: proper UTF8 support; currently only working for single-byte characters
+  G:\Torque3D\Engine\source\core\util\test\strTest.cpp(221):/// TODO
+  G:\Torque3D\Engine\source\core\util\str.cpp(1080):///@todo review for error checking
+  G:\Torque3D\Engine\source\core\util\str.cpp(1140):///@todo review for error checking
+  G:\Torque3D\Engine\source\core\util\swizzle.h(121):   // TODO: OpenMP?
+  G:\Torque3D\Engine\source\core\util\tDictionary.h(41):// TODO: Maybe move these into a more general Tuple class?
+  G:\Torque3D\Engine\source\core\util\tVector.h(26):// TODO: This shouldn't be included in headers... it should
+  G:\Torque3D\Engine\source\core\iTickable.h(90):/// @todo Support processBefore/After and move the GameBase processing over to use ITickable
+  G:\Torque3D\Engine\source\core\resourceManager.cpp(43):   // TODO: Dump resources that have not been released?
+  G:\Torque3D\Engine\source\core\resourceManager.cpp(67):      // TODO: This can fail if the file doesn't exist 
+  G:\Torque3D\Engine\source\environment\editors\guiRoadEditorCtrl.cpp(228):   // TODO: handle overlapping roads/nodes somehow, cycle through them.
+  G:\Torque3D\Engine\source\environment\decalRoad.cpp(1667):      // TODO: I don't think this works right with tiling!
+  G:\Torque3D\Engine\source\environment\river.cpp(2154):      // TODO: add bounds BoxF to RiverSegment
+  G:\Torque3D\Engine\source\environment\sun.cpp(387):   setMaskBits( UpdateMask ); // TODO: Break out the masks to save bandwidth!
+  G:\Torque3D\Engine\source\environment\sun.cpp(394):   setMaskBits( UpdateMask ); // TODO: Break out the masks to save some space!
+  G:\Torque3D\Engine\source\environment\sun.cpp(401):   setMaskBits( UpdateMask ); // TODO: Break out the masks to save some space!
+  G:\Torque3D\Engine\source\environment\waterObject.cpp(717):   // TODO: Revive projection z-bias at some point.
+  G:\Torque3D\Engine\source\environment\waterPlane.cpp(683):   // TODO: This is a hack... why is this broken... check after
+  G:\Torque3D\Engine\source\forest\editor\forestBrushTool.cpp(549):   const U32 mask = TerrainObjectType | StaticShapeObjectType; // TODO: Make an option!
+  G:\Torque3D\Engine\source\forest\ts\tsForestCellBatch.cpp(47):   // TODO: Eventually we should atlas multiple details into
+  G:\Torque3D\Engine\source\forest\ts\tsForestItemData.cpp(159):   // TODO: Expose some real parameters to the datablock maybe?
+  G:\Torque3D\Engine\source\forest\ts\tsForestItemData.cpp(234):   // TODO: Selecting the lod seems more expensive than
+  G:\Torque3D\Engine\source\forest\forest.cpp(158):   // TODO: Make sure this calls the script "onAdd" which will
+  G:\Torque3D\Engine\source\forest\forestCell.cpp(139):   // TODO: Items are generated in order of type,
+  G:\Torque3D\Engine\source\forest\forestCell.cpp(471):         // TODO: When we add breakable tree support this is where
+  G:\Torque3D\Engine\source\forest\forestCell.cpp(476):         // TODO: Need to support multiple collision shapes
+  G:\Torque3D\Engine\source\forest\forestDataFile.cpp(121):      // TODO: Change this to instead create a dummy forest data
+  G:\Torque3D\Engine\source\forest\forestDataFile.cpp(586):      // TODO: If we could know here that the cell is fully within
+  G:\Torque3D\Engine\source\forest\forestRender.cpp(68):   // TODO: Fix stats.
+  G:\Torque3D\Engine\source\forest\forestRender.cpp(98):   // TODO: Move these into the TSForestItemData as something we
+  G:\Torque3D\Engine\source\forest\forestRender.cpp(217):         // TODO: Light queries for batches?
+  G:\Torque3D\Engine\source\forest\forestWindEmitter.cpp(363):      // TODO: wasn't this a big hack we already fixed better?
+  G:\Torque3D\Engine\source\forest\windDeformation.cpp(92):      // TODO: This is possibly a side effect of not 
+  G:\Torque3D\Engine\source\forest\windDeformation.cpp(119):      // TODO: This is horrible... we should avoid access to the script
+  G:\Torque3D\Engine\source\gfx\bitmap\ddsLoader.cpp(199):   // TODO: This doesn't take mDepth into account, so
+  G:\Torque3D\Engine\source\gfx\bitmap\gBitmap.cpp(858):   // TODO: This could adaptively size the copy 
+  G:\Torque3D\Engine\source\gfx\D3D9\pc\gfxPCD3D9Target.cpp(74):   // TODO:  The way this is implemented... you can attach a texture 
+  G:\Torque3D\Engine\source\gfx\D3D9\pc\gfxPCD3D9Target.cpp(281):   // TODO: This is often the same shared depth buffer used by most
+  G:\Torque3D\Engine\source\gfx\D3D9\gfxD3D9Cubemap.cpp(148):         // TODO: The DDS can skip surfaces, but i'm unsure what i should
+  G:\Torque3D\Engine\source\gfx\D3D9\gfxD3D9Shader.cpp(231):   // TODO: Remove buffers and layouts that don't exist for performance?
+  G:\Torque3D\Engine\source\gfx\D3D9\gfxD3D9Shader.cpp(401):      // TODO: Support 3x3 and 2x2 matricies?      
+  G:\Torque3D\Engine\source\gfx\D3D9\gfxD3D9Shader.cpp(427):   // TODO: Maybe support this in the future?
+  G:\Torque3D\Engine\source\gfx\D3D9\gfxD3D9TextureObject.cpp(199):   // TODO: Implement Xenon version -patw
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Device.cpp(333):   //TODO implement feature levels?
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Device.cpp(1276):   //TODO: enable proper support for D3D11_USAGE_IMMUTABLE
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Device.cpp(1355):   //TODO: enable proper support for D3D11_USAGE_IMMUTABLE
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Device.cpp(1544):      //TODO: Perhaps save/cache the ID3DBlob for later use on identical vertex formats,save creating/compiling the temp shader everytime
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(167):      // TODO add other AlignedVector here
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(262):    // TODO: Remove buffers and layouts that don't exist for performance?
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(491):      // TODO: Support 3x3 and 2x2 matricies?      
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(517):   // TODO: Maybe support this in the future?
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(617):      // TODO: This is not very effecient updating the whole lot, re-implement the dirty system to work with multiple constant buffers.
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(618):      // TODO: Implement DX 11.1 UpdateSubresource1 which supports updating ranges with constant buffers
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(635):      // TODO: This is not very effecient updating the whole lot, re-implement the dirty system to work with multiple constant buffers.
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(636):      // TODO: Implement DX 11.1 UpdateSubresource1 which supports updating ranges with constant buffers
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(743):   //TODO support D3D_FEATURE_LEVEL properly with shaders instead of hard coding at hlsl 5
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Shader.cpp(831):   U32 flags = D3DCOMPILE_ENABLE_STRICTNESS | D3DCOMPILE_OPTIMIZATION_LEVEL3; //TODO double check load times with D3DCOMPILE_OPTIMIZATION_LEVEL3
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11StateBlock.cpp(281):   //TODO samplers for vertex shader
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Target.cpp(64):   // TODO:  The way this is implemented... you can attach a texture 
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11Target.cpp(93):   // TODO: Mip map generation currently only supported on dynamic cubemaps
+  G:\Torque3D\Engine\source\gfx\D3D11\gfxD3D11TextureManager.cpp(540):	//TODO: add MSAA support later.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLCircularVolatileBuffer.h(18):      //looks like for some reason on windows + sdl + opengl the order make invalid / wrong the process TODO: Refactor -LAR
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLCircularVolatileBuffer.h(95):      //looks like for some reason on windows + sdl + opengl the order make invalid / wrong the process TODO: Refactor -LAR
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLCubemap.cpp(171):         // TODO: The DDS can skip surfaces, but i'm unsure what i should
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLDevice.cpp(107):// >>>> OPENGL INTEL WORKAROUND @todo OPENGL INTEL remove
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLDevice.cpp(163):      // @todo OPENGL INTEL - This is a workaround for a warning spam or even crashes with actual framebuffer code, remove when implemented TGL layer.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLDevice.cpp(986):   // TODO OPENGL, add supprt for INTEL cards.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLShader.cpp(839):   // TODO:  The #line pragma on GLSL takes something called a
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLShader.cpp(909):         // TODO: Disabled till this is fixed correctly.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLShader.cpp(930):         // TODO: Disabled till this is fixed correctly.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLShader.cpp(976):      if(macros[i].name.isEmpty())  // TODO OPENGL
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLStateBlock.cpp(178):   // TODO: states added for detail blend   
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLTextureManager.cpp(112):   // @todo OPENGL - Creating mipmaps for compressed formats. Not supported on OpenGL ES and bugged on AMD. We use mipmaps present on file.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLTextureManager.cpp(126):   // @todo OPENGL - OpenGL ES2 not support mipmaps on NPOT textures
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLTextureTarget.cpp(122):class _GFXGLTextureTargetImpl // TODO OPENGL remove and implement on GFXGLTextureTarget
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLWindowTarget.cpp(68):   // TODO: Investigate this further.
+  G:\Torque3D\Engine\source\gfx\gl\gfxGLWindowTarget.h(41):      // TODO: Fix me!
+  G:\Torque3D\Engine\source\gfx\util\triListOpt.cpp(126):         // TODO: Something better than linear performance here...
+  G:\Torque3D\Engine\source\gfx\gFont.cpp(556):   // TODO: Is this error still true?
+  G:\Torque3D\Engine\source\gfx\gfxCardProfile.cpp(204):   // TODO: Fix all of this vendor crap, it's not consistent
+  G:\Torque3D\Engine\source\gfx\gfxDevice.cpp(1317):   // TODO: Maybe expose GFX::selectSupportedFormat() so that this
+  G:\Torque3D\Engine\source\gfx\gfxDevice.h(793):   virtual void disableShaders( bool force = false ) {} // TODO Remove when T3D 4.0
+  G:\Torque3D\Engine\source\gfx\gfxShader.h(205):   // TODO: Make this protected and put a real API around it.
+  G:\Torque3D\Engine\source\gfx\gfxStructs.h(73):   /// @todo Revisit below (currently unused by fixed function lights)
+  G:\Torque3D\Engine\source\gfx\gfxTextureManager.cpp(254):   // TODO: Profile checking HERE
+  G:\Torque3D\Engine\source\gfx\gfxTextureManager.cpp(379):      // TODO: Set it up so that ALL format conversions use DDSFile. Rip format
+  G:\Torque3D\Engine\source\gfx\gfxTextureManager.cpp(781):   // TODO: Format check HERE! -patw
+  G:\Torque3D\Engine\source\gfx\gfxTextureObject.cpp(35):// TODO: Change this to be in non-shipping builds maybe?
+  G:\Torque3D\Engine\source\gfx\gfxTextureObject.h(122):   // TODO: This looks unused in the engine... not even sure
+  G:\Torque3D\Engine\source\gfx\primBuilder.cpp(202):      // TODO: Fix this to allow > MAX_DYNAMIC_VERTS!
+  G:\Torque3D\Engine\source\gui\containers\guiSplitContainer.cpp(303):   // TODO: Is this right James?  This isn't needed anymore?
+  G:\Torque3D\Engine\source\gui\controls\guiPopUpCtrl.cpp(901):      // TODO: Implement
+  G:\Torque3D\Engine\source\gui\controls\guiPopUpCtrl.cpp(902):      // TODO: Add onMouseEnter() and onMouseLeave() and a definition of mMouseOver (see guiButtonBaseCtrl) for this to work.
+  G:\Torque3D\Engine\source\gui\controls\guiPopUpCtrlEx.cpp(1083):      // TODO: Implement
+  G:\Torque3D\Engine\source\gui\controls\guiPopUpCtrlEx.cpp(1084):      // TODO: Add onMouseEnter() and onMouseLeave() and a definition of mMouseOver (see guiButtonBaseCtrl) for this to work.
+  G:\Torque3D\Engine\source\gui\controls\guiSliderCtrl.cpp(372):         // TODO: tick marks should be positioned based on the bitmap dimensions.
+  G:\Torque3D\Engine\source\gui\controls\guiSliderCtrl.cpp(388):         // TODO: it would be nice, if the primitive builder were a little smarter,
+  G:\Torque3D\Engine\source\gui\core\guiControl.cpp(504):   offset.y += 20; // TODO: Attempt to fix?: root->getCursorExtent().y;
+  G:\Torque3D\Engine\source\gui\editor\inspector\field.cpp(290):            //TODO: we should actually take strings into account and not chop things up between quotes
+  G:\Torque3D\Engine\source\gui\editor\guiEditCtrl.cpp(1054):   //TODO: undo
+  G:\Torque3D\Engine\source\gui\editor\guiInspectorTypes.cpp(656):   offset.y += 20; // TODO: Attempt to fix?: root->getCursorExtent().y;
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(340):      //@todo if ( !gui->mFixedDetail )
+  G:\Torque3D\Engine\source\gui\editor\guiShapeEdPreview.cpp(1423):      // @todo: Model and other elements (bounds, grid etc) use different
+  G:\Torque3D\Engine\source\gui\utility\guiInputCtrl.cpp(130):   // TODO - add POV support...
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(680):   //TODO: this really should be proportional
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1227):   // TODO: We need to support subdivision levels in GFXDrawUtil!
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1295):      // TODO: Set GFX line width (when it exists) to the value of 'object->mConsoleLineWidth'
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1310):      // TODO: Reset GFX line width here
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1350):      // TODO: Set GFX line width (when it exists) to the value of 'object->mConsoleLineWidth'
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1359):      // TODO: Reset GFX line width here
+  G:\Torque3D\Engine\source\gui\worldEditor\editTSCtrl.cpp(1380):   // TODO: We don't support 3d lines with width... fix this!
+  G:\Torque3D\Engine\source\gui\worldEditor\gizmo.cpp(1840):      // TODO: This wasn't specified before... so it was 
+  G:\Torque3D\Engine\source\gui\worldEditor\guiDecalEditorCtrl.cpp(351):      // TODO: This is crazy... we should move this sort of tracking
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(971):   // TODO: What is this for... megaterrain or tiled terrains?
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1094):   // TODO: This updates all terrains and not just the ones
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(1534):   // TODO: Disabled rendering the terrain borders... it was
+  G:\Torque3D\Engine\source\gui\worldEditor\terrainEditor.cpp(2257):   // TODO!
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(1896)://TODO: [rene 03/10 -- The entire event handling code here needs cleanup]
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(3348)://TODO: Put in the param possible options and what they mean
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(3357)://TODO: Put in the param possible options and what they mean (assuming x,y,z)
+  G:\Torque3D\Engine\source\gui\worldEditor\worldEditor.cpp(3378)://TODO: Better documentation on exactly what this does.
+  G:\Torque3D\Engine\source\lighting\advanced\glsl\gBufferConditionerGLSL.cpp(114):      // TODO: Total hack because Conditioner is directly derived
+  G:\Torque3D\Engine\source\lighting\advanced\hlsl\gBufferConditionerHLSL.cpp(114):      // TODO: Total hack because Conditioner is directly derived
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightBinManager.cpp(673):   // TODO: The specularity control of the light
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightBinManager.cpp(705):         // TODO: Trilight disabled until we properly implement it
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightBufferConditioner.cpp(79):      meta->addStatement( new GenOp( "   // TODO: This clamps HDR values.\r\n" ) );
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(81):   // TODO: We need at least 3.0 shaders at the moment
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(86):   // TODO: Test for the necessary texture formats!
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(404):         // TODO: Should probably cache these results and 
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(422):         // TODO: Should probably cache these results and 
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(444):         // TODO: Should probably cache these results and 
+  G:\Torque3D\Engine\source\lighting\advanced\advancedLightManager.cpp(462):         // TODO: Should probably cache these results and 
+  G:\Torque3D\Engine\source\lighting\basic\blTerrainSystem.cpp(434):   // TODO: Fix me for variable terrain sizes!
+  G:\Torque3D\Engine\source\lighting\common\lightMapParams.cpp(52):   // TODO: Do we even need this?
+  G:\Torque3D\Engine\source\lighting\shadowMap\lightShadowMap.cpp(57):// TODO: Some cards (Justin's GeForce 7x series) barf on the integer format causing
+  G:\Torque3D\Engine\source\lighting\shadowMap\lightShadowMap.cpp(208):         // TODO: Width * 2... really isn't that pixels being used as
+  G:\Torque3D\Engine\source\lighting\shadowMap\lightShadowMap.cpp(316):    /* TODO: find out why this is causing issue with translucent objects
+  G:\Torque3D\Engine\source\lighting\shadowMap\lightShadowMap.cpp(744):   // TODO: Do we even need this?
+  G:\Torque3D\Engine\source\lighting\shadowMap\pssmLightShadowMap.cpp(117):   const F32 nearDist = 0.01f; // TODO: Should this be adjustable or different?
+  G:\Torque3D\Engine\source\lighting\shadowMap\pssmLightShadowMap.cpp(233):   // TODO: This is just retrieving the near and far calculated
+  G:\Torque3D\Engine\source\lighting\shadowMap\pssmLightShadowMap.cpp(271):      // TODO: This seems to produce less "pops" of the
+  G:\Torque3D\Engine\source\lighting\shadowMap\shadowMatHook.cpp(97):   // TODO: Should we render backfaces for 
+  G:\Torque3D\Engine\source\lighting\shadowMap\shadowMatHook.h(33):// TODO: Move ShadowType enum to somewhere 
+  G:\Torque3D\Engine\source\lighting\lightManager.cpp(91):   // TODO!
+  G:\Torque3D\Engine\source\lighting\lightManager.cpp(205):   // TODO: We need to work this out...
+  G:\Torque3D\Engine\source\lighting\lightManager.cpp(283):   // TODO: What should we do here?
+  G:\Torque3D\Engine\source\lighting\lightManager.cpp(288):   // TODO: What should we do here?
+  G:\Torque3D\Engine\source\lighting\lightQuery.cpp(125):         // TODO: This culling is broken... it culls spotlights 
+  G:\Torque3D\Engine\source\lighting\lightQuery.cpp(129):            // TODO: I cannot test to see if we're within
+  G:\Torque3D\Engine\source\lighting\lightQuery.cpp(153):            // TODO: When we have multiple directional 
+  G:\Torque3D\Engine\source\lighting\lightQuery.cpp(158):      // TODO: Manager ambient lights here too!
+  G:\Torque3D\Engine\source\materials\matTextureTarget.cpp(125):   // TODO: No check for duplicates is 
+  G:\Torque3D\Engine\source\materials\processedFFMaterial.cpp(202):            // TODO: Is this right?
+  G:\Torque3D\Engine\source\materials\processedShaderMaterial.cpp(297):   // TODO: This sort of sucks... BL should somehow force this
+  G:\Torque3D\Engine\source\materials\processedShaderMaterial.cpp(1140):         0.0f, 0.0f ); // TODO: Wrap mode flags?
+  G:\Torque3D\Engine\source\materials\processedShaderMaterial.cpp(1150):         0.0f, 0.0f ); // TODO: Wrap mode flags?
+  G:\Torque3D\Engine\source\materials\processedShaderMaterial.cpp(1212):      // TODO: Could we not remove this constant?  Use mObjTransSC and cast to float3x3 instead?
+  G:\Torque3D\Engine\source\math\util\frustum.cpp(34)://TODO: For OBB/frustum intersections and ortho frustums, we can resort to a much quicker AABB/OBB test
+  G:\Torque3D\Engine\source\math\util\frustum.h(51)://TODO: Specialize intersection tests for frustums using octant tests
+  G:\Torque3D\Engine\source\math\glmMatrix.h(51):	//TODO Transpose
+  G:\Torque3D\Engine\source\math\mMathSSE.cpp(195):// TODO: the NASM implementation of SSE_MatrixF_x_MatrixF_Aligned is missing,
+  G:\Torque3D\Engine\source\math\mPolyhedron.impl.h(317):   //TODO: I guess this is insufficient; edges with vertices on the plane may lead us to take different
+  G:\Torque3D\Engine\source\math\mRotation.cpp(299):   //TODO: implement unit test
+  G:\Torque3D\Engine\source\navigation\navMesh.cpp(960):   // Todo: mark areas here.
+  G:\Torque3D\Engine\source\persistence\rapidjson\writer.h(164):	//! \todo Optimization with custom double-to-string converter.
+  G:\Torque3D\Engine\source\persistence\taml\xml\tamlXmlParser.cpp(46):    // TODO: Make sure this is a proper substitute for
+  G:\Torque3D\Engine\source\persistence\taml\fsTinyXml.cpp(87):   //TODO: Can't clear location, investigate if this gives issues.
+  G:\Torque3D\Engine\source\persistence\taml\tamlCustom.h(43)://TODO: Look at this
+  G:\Torque3D\Engine\source\platform\async\asyncBufferedStream.h(405):   //TODO: could scale priority depending on feed status
+  G:\Torque3D\Engine\source\platform\async\asyncPacketStream.h(292):   //TODO: scale priority depending on feed status
+  G:\Torque3D\Engine\source\platform\menus\popupMenu.h(87):   /// TODO: factor out common code
+  G:\Torque3D\Engine\source\platform\menus\popupMenu.h(98):   /// TODO: factor out common code
+  G:\Torque3D\Engine\source\platform\menus\popupMenu.h(104):   /// TODO: factor out common code
+  G:\Torque3D\Engine\source\platform\menus\popupMenu.h(164):   /// TODO: factor out common code
+  G:\Torque3D\Engine\source\platform\menus\popupMenu.h(174):   /// TODO: factor out common code
+  G:\Torque3D\Engine\source\platform\nativeDialogs\msgBox.cpp(96):      "messageBox( \"Error\", \"\" );\n" //TODO
+  G:\Torque3D\Engine\source\platform\threads\threadSafePriorityQueue.h(509):   //TODO: limit number of nodes kept
+  G:\Torque3D\Engine\source\platform\platformCPUCount.cpp(26):// TODO GCC code don't compile on Release with optimizations, mover code to platform layer
+  G:\Torque3D\Engine\source\platform\platformFileIO.cpp(436):// TODO: wow really shouldn't be adding everything to the string table, use the string class!
+  G:\Torque3D\Engine\source\platform\platformFont.h(90):   /// @todo Rethink this so we don't have a private public.
+  G:\Torque3D\Engine\source\platform\platformIntrinsics.h(38)://TODO: 64bit safe
+  G:\Torque3D\Engine\source\platformWin32\minidump\winStackWalker.cpp(487):            // TODO: Mache dies sicher...!
+  G:\Torque3D\Engine\source\platformWin32\minidump\winStackWalker.cpp(501):            // TODO: Mache dies sicher...!
+  G:\Torque3D\Engine\source\platformWin32\minidump\winStackWalker.cpp(547):            // TODO: Mache dies sicher...!
+  G:\Torque3D\Engine\source\platformWin32\videoInfo\wmiVideoInfo.cpp(501):      //TODO PVI_DriverVersion
+  G:\Torque3D\Engine\source\platformWin32\winFileio.cpp(176):            //TODO: New directory should be deleted here.
+  G:\Torque3D\Engine\source\platformWin32\winWindow.cpp(251):   // TODO: Change this to a custom dialog that has Exit, Ignore, Ignore All, and Debug buttons
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(891):      // TODO: This is pretty messy... it should go away.  This info
+  G:\Torque3D\Engine\source\postFx\postEffect.cpp(1589):      // TODO: We should add a conditional copy
+  G:\Torque3D\Engine\source\renderInstance\renderGlowMgr.cpp(126):   // TODO: We need to get the scene state here in a more reliable
+  G:\Torque3D\Engine\source\renderInstance\renderImposterMgr.cpp(216):   // TODO: We could maybe do better with lights when forward
+  G:\Torque3D\Engine\source\renderInstance\renderImposterMgr.cpp(225):   // TODO: I should rework this loop to generate the VB first then
+  G:\Torque3D\Engine\source\renderInstance\renderImposterMgr.cpp(237):      // TODO: Fix MatInstance to take a const SceneRenderState!
+  G:\Torque3D\Engine\source\renderInstance\renderMeshMgr.cpp(196):            // TODO: This could proably be done in a cleaner way.
+  G:\Torque3D\Engine\source\renderInstance\renderParticleMgr.cpp(62):// TODO: Replace these once they are supported via options
+  G:\Torque3D\Engine\source\renderInstance\renderParticleMgr.cpp(134):      // TODO: Improve this once we are grouping systems
+  G:\Torque3D\Engine\source\renderInstance\renderParticleMgr.cpp(218):      // TODO: Rewrite this...
+  G:\Torque3D\Engine\source\renderInstance\renderParticleMgr.cpp(229):   // TODO: Rewrite this block
+  G:\Torque3D\Engine\source\renderInstance\renderParticleMgr.cpp(236):   // TODO: [re]move this block
+  G:\Torque3D\Engine\source\renderInstance\renderPrePassMgr.cpp(228):   AssertFatal( prepassMat, "TODO: Handle this better." );
+  G:\Torque3D\Engine\source\renderInstance\renderTerrainMgr.cpp(107):   // TODO: We could probably sort this in some
+  G:\Torque3D\Engine\source\scene\culling\sceneCullingState.cpp(230):   //TODO: check if we need to handle penetration of the near plane for occluders specially
+  G:\Torque3D\Engine\source\scene\culling\sceneCullingState.cpp(284):      //TODO: might need to do additional checks here for non-planar polygons used by occluders
+  G:\Torque3D\Engine\source\scene\culling\sceneCullingState.cpp(285):      //TODO: test for colinearity of edge vector with view vector (occluders only)
+  G:\Torque3D\Engine\source\scene\culling\sceneCullingState.cpp(388):         //TODO
+  G:\Torque3D\Engine\source\scene\mixin\scenePolyhedralObject.impl.h(148):      //TODO: render polyhedron with material
+  G:\Torque3D\Engine\source\scene\zones\sceneSimpleZone.cpp(300):      //TODO: would be nice to catch this via "visibility changed?" checks but
+  G:\Torque3D\Engine\source\scene\zones\sceneZoneSpace.cpp(191):   //TODO: This is suboptimal.  While it prevents the most blatantly wrong automatic connections,
+  G:\Torque3D\Engine\source\scene\zones\sceneZoneSpace.h(130):      //TODO: we should have both automatic and manual connections; only automatic connections
+  G:\Torque3D\Engine\source\scene\zones\sceneZoneSpaceManager.cpp(922):   //TODO: can do a lot more validation here
+  G:\Torque3D\Engine\source\scene\sceneContainer.cpp(674):   // TODO: Optimize for water and zones?
+  G:\Torque3D\Engine\source\scene\sceneContainer.cpp(1603)://TODO: make RayInfo an API type
+  G:\Torque3D\Engine\source\scene\sceneManager.cpp(81):         "TODO\n\n"
+  G:\Torque3D\Engine\source\scene\sceneManager.cpp(85):         "TODO\n\n"
+  G:\Torque3D\Engine\source\scene\sceneManager.cpp(412):   //TODO: We should split the codepaths here based on whether the outdoor zone has visible space.
+  G:\Torque3D\Engine\source\scene\sceneManager.h(364)://TODO: these two need to go
+  G:\Torque3D\Engine\source\scene\sceneRenderState.cpp(62):   // TODO: What about ortho modes?  Is near plane ok
+  G:\Torque3D\Engine\source\sfx\media\sfxVorbisStream.h(86):      // TODO: Deal with error cases... like for unseekable streams!
+  G:\Torque3D\Engine\source\sfx\media\sfxWavStream.cpp(172):         // TODO: Handle these other formats in a more graceful manner!
+  G:\Torque3D\Engine\source\sfx\media\sfxWavStream.cpp(280):   // TODO: Is it *just* 16 bit samples that needs to 
+  G:\Torque3D\Engine\source\sfx\openal\sfxALDevice.cpp(43):   // TODO: The OpenAL device doesn't set the primary buffer
+  G:\Torque3D\Engine\source\sfx\xaudio\sfxXAudioDevice.cpp(47):   // TODO: We should change the terminology to voices!
+  G:\Torque3D\Engine\source\sfx\sfxProfile.cpp(159):   // TODO: Investigate how NetConnection::filesWereDownloaded()
+  G:\Torque3D\Engine\source\shaderGen\GLSL\bumpGLSL.cpp(294):   // TODO: I'm at a loss at why i need to flip the binormal/y coord
+  G:\Torque3D\Engine\source\shaderGen\GLSL\bumpGLSL.cpp(361):   // TODO: Fix second UV maybe?
+  G:\Torque3D\Engine\source\shaderGen\GLSL\paraboloidGLSL.cpp(95):   // TODO: If we change other shadow shaders to write out
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.cpp(176):      dSprintf( (char*)output, sizeof(output), "#define IN_%s IN.%s\r\n", var->name, var->name ); // TODO REMOVE
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.h(43):   virtual void print( Stream &stream) {} // TODO OPENGL temporal fix for dedicated build on Linux
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderCompGLSL.h(59):   virtual void print( Stream &stream) {} // TODO OPENGL temporal fix for dedicated build on Linux
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(936):      // TODO: Select wrap or clamp somehow
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(1612):   // TODO: We could add a feature to toggle between this
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(1845):   // TODO: Restore the lighting attenuation here!
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(2064):   // TODO: We can totally detect for this in the material
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(2342):      // TODO: We should see if we can share this register
+  G:\Torque3D\Engine\source\shaderGen\GLSL\shaderFeatureGLSL.cpp(2408):   // TODO: Fix for instancing.
+  G:\Torque3D\Engine\source\shaderGen\HLSL\bumpHLSL.cpp(326):   // TODO: I'm at a loss at why i need to flip the binormal/y coord
+  G:\Torque3D\Engine\source\shaderGen\HLSL\bumpHLSL.cpp(402):   // TODO: Fix second UV maybe?
+  G:\Torque3D\Engine\source\shaderGen\HLSL\paraboloidHLSL.cpp(100):   // TODO: If we change other shadow shaders to write out
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(974):      // TODO: Select wrap or clamp somehow
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(1727):   // TODO: We could add a feature to toggle between this
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(2012):   // TODO: Restore the lighting attenuation here!
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(2257):   // TODO: We can totally detect for this in the material
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(2535):      // TODO: We should see if we can share this register
+  G:\Torque3D\Engine\source\shaderGen\HLSL\shaderFeatureHLSL.cpp(2602):   // TODO: Fix for instancing.
+  G:\Torque3D\Engine\source\shaderGen\shaderGen.cpp(408):   _printDependencies(stream); // TODO: Split into vert and pix dependencies?
+  G:\Torque3D\Engine\source\shaderGen\shaderGen.cpp(430):   _printDependencies(stream); // TODO: Split into vert and pix dependencies?
+  G:\Torque3D\Engine\source\sim\netGhost.cpp(1298):   // MARKF - TODO - looks like we could have memory leaks here
+  G:\Torque3D\Engine\source\T3D\decal\decalData.cpp(101):   // TODO: We could in theory calculate if we can skip 
+  G:\Torque3D\Engine\source\T3D\decal\decalManager.cpp(1046):      // TODO: If each sphere stored its largest decal instance we
+  G:\Torque3D\Engine\source\T3D\fx\fxFoliageReplicator.cpp(43):// POTENTIAL TODO LIST:
+  G:\Torque3D\Engine\source\T3D\fx\fxFoliageReplicator.cpp(44)://   TODO: Clamp item alpha to fog alpha
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(365):   // TODO: Maybe add support for non-facing billboards
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(473):   // TODO: This really doesn't belong here... we need a
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(678):   // TODO: Add a mask bit option to addField() and/or
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(691):      // TODO: We could probably optimize a few of these
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1235):         // TODO: When did we loose the world space elevation when
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1258):         // TODO: Can't we remove this test?  The terrain 
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1263):            // TODO: We could probably call terrainLM->getBits()
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1277):         // TODO: Could we break up the generation into
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1283):            // TODO: Convert the size into a real size... not scale!
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1285):            // TODO: We could probably cache the shape bounds
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1343):   // TODO: EmptyUpdate doesn't work yet... fix editor/terrain.
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1355):      // TODO: I don't think this works right with tiling!
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1482):         // TODO: This is the expensive call and where we should optimize. In
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1526):   // TODO: Make sure that the ground cover stops rendering
+  G:\Torque3D\Engine\source\T3D\fx\groundCover.cpp(1646):      // TODO: Add a special fade out for DTS?
+  G:\Torque3D\Engine\source\T3D\fx\particleEmitter.cpp(1347):   // TODO: Prefetch
+  G:\Torque3D\Engine\source\T3D\fx\particleEmitter.cpp(1436):   // TODO: Prefetch
+  G:\Torque3D\Engine\source\T3D\fx\particleEmitterNode.cpp(158):   // Todo: ScopeAlways?
+  G:\Torque3D\Engine\source\T3D\fx\particleEmitterNode.cpp(253):   // Todo: Uncomment if this is a "leaf" class
+  G:\Torque3D\Engine\source\T3D\fx\precipitation.cpp(1115):         // TODO: Add check to filter out hits on backfaces.
+  G:\Torque3D\Engine\source\T3D\fx\ribbonNode.cpp(69):   // Todo: ScopeAlways?
+  G:\Torque3D\Engine\source\T3D\fx\ribbonNode.cpp(160):   // Todo: Uncomment if this is a "leaf" class
+  G:\Torque3D\Engine\source\T3D\gameBase\gameConnection.cpp(1536):      // TODO: Maybe improve this to account for the duration
+  G:\Torque3D\Engine\source\T3D\physics\physicsShape.cpp(856):   // TODO: Find a better approximation of the
+  G:\Torque3D\Engine\source\T3D\physics\physicsShape.cpp(870):   // TODO: There is no simple way to really sync this sort of an 
+  G:\Torque3D\Engine\source\T3D\sfx\sfxEmitter.cpp(135):   //TODO: not implemented ATM
+  G:\Torque3D\Engine\source\T3D\sfx\sfxEmitter.cpp(879):   //TODO: some point size support in GFX would be nice
+  G:\Torque3D\Engine\source\T3D\sfx\sfxEmitter.h(135):      /// @todo Currently not implemented.
+  G:\Torque3D\Engine\source\T3D\vehicles\hoverVehicle.cpp(441):   // Todo: ScopeAlways?
+  G:\Torque3D\Engine\source\T3D\vehicles\hoverVehicle.cpp(549):   // Todo: Uncomment if this is a "leaf" class
+  G:\Torque3D\Engine\source\T3D\vehicles\vehicle.cpp(922):      //TODO: Only update when position has actually changed
+  G:\Torque3D\Engine\source\T3D\groundPlane.cpp(340):   // TODO: Should we skip rendering the ground plane into
+  G:\Torque3D\Engine\source\T3D\levelInfo.cpp(327):   // TODO: This probably needs to be moved.
+  G:\Torque3D\Engine\source\T3D\physicalZone.cpp(405):   // TODO: This doesn't look like it's testing against the polyhedron at
+  G:\Torque3D\Engine\source\T3D\player.cpp(2336):   // TODO: This will be WRONG when player is prone or swimming!
+  G:\Torque3D\Engine\source\T3D\player.cpp(4622):   // TODO: not used?
+  G:\Torque3D\Engine\source\T3D\projectile.cpp(568):   // Todo: ScopeAlways?
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(524):   // TODO: These are only really used in Basic Lighting
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1582):   /// @todo Find out what pos does
+  G:\Torque3D\Engine\source\T3D\shapeBase.h(1583):   /// @param   pos   TODO: Find out what this does
+  G:\Torque3D\Engine\source\T3D\spotLight.cpp(182):   // TODO: Maybe we should make the inner angle a scale
+  G:\Torque3D\Engine\source\terrain\terrCellMaterial.cpp(89):   // TODO: We need to split the stateblock initialization
+  G:\Torque3D\Engine\source\terrain\terrCellMaterial.cpp(326):   // TODO: This seems ugly... we should trigger
+  G:\Torque3D\Engine\source\terrain\terrCellMaterial.cpp(834):      // TODO: Sometimes during reset of the light manager we get a
+  G:\Torque3D\Engine\source\terrain\terrData.cpp(791):      // TODO: Insert and reindex!        
+  G:\Torque3D\Engine\source\terrain\terrData.cpp(1024):   // TODO: We should move this sharing down into TerrFile where
+  G:\Torque3D\Engine\source\terrain\terrImport.cpp(294):      // TODO: We have to save and reload the file to get
+  G:\Torque3D\Engine\source\ts\collada\colladaAppMesh.cpp(385):            // @todo: Check if morph targets have different UVs to base geometry
+  G:\Torque3D\Engine\source\ts\collada\colladaAppMesh.cpp(765):   // @todo: Could the base geometry (or any target geometry) also be a morph?
+  G:\Torque3D\Engine\source\ts\collada\colladaExtensions.h(147):   AnimatedBool   stagger;       // @todo: not supported yet
+  G:\Torque3D\Engine\source\ts\collada\colladaShapeLoader.cpp(143):      // @todo:Only support targeting float arrays for now...
+  G:\Torque3D\Engine\source\ts\collada\colladaShapeLoader.cpp(169):         // @todo:don't care about the input param names for now. Could
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.cpp(258):         targetValueOffset = (indN * 4) + indM;   // @todo: 4x4 matrix only
+  G:\Torque3D\Engine\source\ts\collada\colladaUtils.h(777):   // @todo: Disable morph animations for now since they are not supported by T3D
+  G:\Torque3D\Engine\source\ts\loader\tsShapeLoader.cpp(110):   srot.identity();        //@todo: srot not supported yet
+  G:\Torque3D\Engine\source\ts\tsAnimate.cpp(68):   // @todo: When a node is added, we need to make sure to resize the nodeTransforms array as well
+  G:\Torque3D\Engine\source\ts\tsAnimate.cpp(308):            // @todo:No support for scale yet => need to do proper affine decomposition here
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(30):#include "T3D/tsStatic.h" // TODO: We shouldn't have this dependancy!
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(238):   // TODO: if ever...
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(324):   // TODO: if ever...
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(887):      // TODO: Fix the old 9 detail offset which is there
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(1014):   // TODO: We need to support LOS collision for physics.
+  G:\Torque3D\Engine\source\ts\tsCollision.cpp(1234):   // TODO: Add a polyList->getCount() so we can see if we
+  G:\Torque3D\Engine\source\ts\tsMeshIntrinsics.cpp(39):   // TODO: Try prefetch w/ ptr de-reference
+  G:\Torque3D\Engine\source\ts\tsShape.cpp(1174):         ptr32[i] = skip ?  0 : (intptr_t)mesh; // @todo 64bit
+  G:\Torque3D\Engine\source\ts\tsShape.h(358):   // TODO: This would be nice as Tuple<>
+  G:\Torque3D\Engine\source\ts\tsShapeEdit.cpp(1409):      // @todo:Need to remove keyframes if start!=0 and end!=-1
+  G:\Torque3D\Engine\source\ts\tsShapeInstance.cpp(278):   // TODO: It would be good to go thru all the meshes and
+  G:\Torque3D\Engine\source\util\imposterCapture.cpp(252):   // TODO: Remove all this when we get rid of the 'render on black/white'.
+  G:\Torque3D\Engine\source\util\sampler.cpp(253):      //TODO: do this properly with a binary search (the mRecords array is already sorted by key)
+  G:\Torque3D\Engine\source\util\scopeTracker.h(790):      //TODO: this could be optimized by dynamically determining whether to walk upwards
+  Matching lines: 343    Matching files: 195    Total files searched: 1856

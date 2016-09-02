@@ -1,0 +1,136 @@
+Typedefs
+		typedef detail::tvec2< bool > 		bvec2
+		typedef detail::tvec3< bool > 		bvec3
+		typedef detail::tvec4< bool > 		bvec4
+		typedef detail::tmat2x2< double > 	dmat2
+		typedef detail::tmat2x2< double > 	dmat2x2
+		typedef detail::tmat2x3< double > 	dmat2x3
+		typedef detail::tmat2x4< double > 	dmat2x4
+		typedef detail::tmat3x3< double > 	dmat3
+		typedef detail::tmat3x2< double > 	dmat3x2
+		typedef detail::tmat3x3< double > 	dmat3x3
+		typedef detail::tmat3x4< double > 	dmat3x4
+		typedef detail::tmat4x4< double > 	dmat4
+		typedef detail::tmat4x2< double > 	dmat4x2
+		typedef detail::tmat4x3< double > 	dmat4x3
+		typedef detail::tmat4x4< double > 	dmat4x4
+		typedef detail::tvec2< double > 	dvec2
+		typedef detail::tvec3< double > 	dvec3
+		typedef detail::tvec4< double > 	dvec4
+		typedef mediump_ivec2 				ivec2
+		typedef mediump_ivec3 				ivec3
+		typedef mediump_ivec4 				ivec4
+		typedef mat2x2 						mat2
+		typedef mediump_mat2x2 				mat2x2
+		typedef mediump_mat2x3 				mat2x3
+		typedef mediump_mat2x4 				mat2x4
+		typedef mat3x3 						mat3
+		typedef mediump_mat3x2 				mat3x2
+		typedef mediump_mat3x3 				mat3x3
+		typedef mediump_mat3x4 				mat3x4
+		typedef mat4x4 						mat4
+		typedef mediump_mat4x2 				mat4x2
+		typedef mediump_mat4x3 				mat4x3
+		typedef mediump_mat4x4 				mat4x4
+		typedef mediump_uvec2 				uvec2
+		typedef mediump_uvec3 				uvec3
+		typedef mediump_uvec4 				uvec4
+		typedef mediump_vec2 				vec2
+		typedef mediump_vec3 				vec3
+		typedef mediump_vec4 				vec4
+Common Functions (Floating Point Scalar and Vector)
+		abs (genType const &x)
+		ceil (genType const &x)
+		clamp (genType const &x, genType const &minVal, genType const &maxVal)
+		floatBitsToInt (genType const &value)
+		floatBitsToUint (genType const &value)
+		floor (genType const &x)
+		fma (genType const &a, genType const &b, genType const &c)
+		fract (genType const &x)
+		frexp (genType const &x, genIType &exp)
+		intBitsToFloat (genIType const &value)
+		genType::bool_type 	isinf (genType const &x)
+		genType::bool_type 	isnan (genType const &x)
+		ldexp (genType const &x, genIType const &exp)
+		max (genType const &x, genType const &y)
+		min (genType const &x, genType const &y)
+		mix (genTypeT const &x, genTypeT const &y, genTypeU const &a)
+		mod (genType const &x, genType const &y)
+		mod (genType const &x, typename  const &y)
+		modf (genType const &x, genType &i)
+		round (genType const &x)
+		roundEven (genType const &x)
+		sign (genType const &x)
+		smoothstep (genType const &edge0, genType const &edge1, genType const &x)
+		step (genType const &edge, genType const &x)
+		trunc (genType const &x)
+		uintBitsToFloat (genUType const &value)
+Exponetial Functions
+		exp (genType const &x) 
+		exp2 (genType const &x) 
+		inversesqrt (genType const &x) 
+		log (genType const &x) 
+		log2 (genType const &x) 
+		pow (genType const &x, genType const &y) 
+		sqrt (genType const &x)
+Gemoetric Functions
+		cross (detail::tvec3< valType > const &x, detail::tvec3< valType > const &y)
+		distance (genType const &p0, genType const &p1)
+		dot (genType const &x, genType const &y)
+		faceforward (genType const &N, genType const &I, genType const &Nref)
+		length (genType const &x)
+		normalize (genType const &x)
+		reflect (genType const &I, genType const &N)
+		refract (genType const &I, genType const &N, typename  const &eta)
+Integer Functions
+		bitCount (genIUType< T > const &Value)
+		bitfieldExtract (genIUType const &Value, int const &Offset, int const &Bits)
+		bitfieldInsert (genIUType const &Base, genIUType const &Insert, int const &Offset, int const &Bits)
+		bitfieldReverse (genIUType const &Value)
+		findLSB (genIUType< T > const &Value)
+		findMSB (genIUType< T > const &Value)
+		imulExtended (genIType const &x, genIType const &y, genIType &msb, genIType &lsb)
+		uaddCarry (genUType const &x, genUType const &y, genUType &carry)
+		umulExtended (genUType const &x, genUType const &y, genUType &msb, genUType &lsb)
+		usubBorrow (genUType const &x, genUType const &y, genUType &borrow)
+Matrix Functions
+		determinant (detail::tmat2x2< valType > const &m)
+		determinant (detail::tmat3x3< valType > const &m)
+		determinant (detail::tmat4x4< valType > const &m)
+		inverse (detail::tmat2x2< valType > const &m)
+		inverse (detail::tmat3x3< valType > const &m)
+		inverse (detail::tmat4x4< valType > const &m)
+		matrixCompMult (matType const &x, matType const &y)
+		outerProduct (vecType const &c, vecType const &r)
+		transpose (matType const &x)
+Noise Functions
+		noise1 (genType const &x)
+		noise2 (genType const &x)
+		noise3 (genType const &x)
+		noise4 (genType const &x)
+Angle and Trig Functions
+		acos (genType const &x)
+		acosh (genType const &x)
+		asin (genType const &x)
+		asinh (genType const &x)
+		atan (genType const &y, genType const &x)
+		atan (genType const &y_over_x)
+		atanh (genType const &x)
+		cos (genType const &angle)
+		cosh (genType const &angle)
+		degrees (genType const &radians)
+		radians (genType const &degrees)
+		sin (genType const &angle)
+		sinh (genType const &angle)
+		tan (genType const &angle)
+		tanh (genType const &angle)
+Vector relational Functions
+		all (vecType< bool > const &v)
+		any (vecType< bool > const &v)
+		equal (vecType const &x, vecType const &y)
+		greaterThan (vecType const &x, vecType const &y)
+		greaterThanEqual (vecType const &x, vecType const &y)
+		lessThan (vecType const &x, vecType const &y)
+		lessThanEqual (vecType const &x, vecType const &y)
+		not_ (vecType< bool > const &v)
+		notEqual (vecType const &x, vecType const &y)
