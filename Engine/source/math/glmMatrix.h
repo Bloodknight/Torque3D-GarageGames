@@ -64,12 +64,9 @@ class glmMatrixF
 {
 private:
 	
-   //F32 m[16];			///< Note: Torque uses row-major matrices
-
-	//TODO Transpose
-   glm::mat4 m;		///< Note: glm uses column-major matrices, likely a major source of error if not transposed somewhere 
-
-   
+	F32 _m[16];
+	glm::mat4 m;		///< Note: glm uses column-major matrices
+						///  Previously used row major; likely a major source of error if not careful
 
 public:
    /// Create an uninitialized matrix.
@@ -264,40 +261,46 @@ inline glmMatrixF::glmMatrixF( const EulerF &e )
    set(e);
 }
 
-inline glmMatrixF::glmMatrixF( const EulerF &e, const Point3F& p )
+//inline glmMatrixF::glmMatrixF(const glm::vec3& e, const glm::vec3& p)
+
+inline glmMatrixF::glmMatrixF(const EulerF& e, const Point3F& p)
 {
-   set(e,p);
+	set(e, p);
 }
 
-inline glmMatrixF& glmMatrixF::set( const EulerF &e)
+inline glmMatrixF& glmMatrixF::set(const EulerF& e)
 {
-   m_matF_set_euler( e, *this );
+	
+	glm::vec3 p;
+	p = Point3FtoVec3(e);
+
+	glm::eulerAngleXYZ(p.x, p.y, p.z);
+
+	m_matF_set_euler(e, *this);
+	return (*this);
+}
+
+
+inline glmMatrixF& glmMatrixF::set(const EulerF& e, const Point3F& p)
+{
+	m_matF_set_euler_point(e, p, *this);
+	return (*this);
+}
+
+inline glmMatrixF& glmMatrixF::setCrossProduct( const Point3F& p)
+{
+	_m[1] = -(_m[4] = p.z);
+	_m[8] = -(_m[2] = p.y);
+	_m[6] = -(_m[9] = p.x);
+	_m[0] = _m[3] = _m[5] = _m[7] = _m[10] = _m[11] = _m[12] = _m[13] = _m[14] = 0.0f;
+	_m[15] = 1;
+	m = glm::make_mat4(_m);
    return (*this);
 }
 
-
-inline glmMatrixF& glmMatrixF::set( const EulerF &e, const Point3F& p)
+inline glmMatrixF& glmMatrixF::setTensorProduct(const Point3F& p, const Point3F& q)
 {
-   m_matF_set_euler_point( e, p, *this );
-   return (*this);
-}
-
-inline glmMatrixF& glmMatrixF::setCrossProduct( const glm::vec3 &p)
-{
-
-
-   m[1] = -(m[4].z = p.z);
-   m[8] = -(m[2] = p.y);
-   m[6] = -(m[9] = p.x);
-   m[0] = m[3] = m[5] = m[7] = m[10] = m[11] =
-      m[12] = m[13] = m[14] = 0.0f;
-   m[15] = 1;
-   return (*this);
-}
-
-inline glmMatrixF& glmMatrixF::setTensorProduct( const Point3F &p, const Point3F &q)
-{
-   m[0] = p.x * q.x;
+   m[0][0] = p.x * q.x;
    m[1] = p.x * q.y;
    m[2] = p.x * q.z;
    m[4] = p.y * q.x;
@@ -539,6 +542,8 @@ inline VectorF glmMatrixF::getForwardVector() const
 {
    VectorF vec;
    getColumn( 1, &vec );
+   vec = glm::column(m, 0);
+
    return vec;
 }
 
