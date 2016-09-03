@@ -42,6 +42,24 @@
 ///
 /// This runs at F32 precision.
 
+inline glm::vec3 Point3FtoVec3(Point3F val)
+{
+	glm::vec3 newval;
+	newval.x = val.x;
+	newval.y = val.y;
+	newval.z = val.z;
+	return newval;
+}
+
+inline Point3F Vec3toPoint3F(glm::vec3 val)
+{
+	Point3F newval;
+	newval.x = val.x;
+	newval.y = val.y;
+	newval.z = val.z;
+	return newval;
+}
+
 class glmMatrixF
 {
 private:
