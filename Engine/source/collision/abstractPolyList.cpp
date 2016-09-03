@@ -70,12 +70,6 @@ void AbstractPolyList::addBox(const Box3F &box, BaseMatInstance* material)
    }
 }
 
-bool AbstractPolyList::getMapping(MatrixF *, Box3F *)
-{
-   // return list transform and bounds in list space...optional
-   return false;
-}
-
 
 bool AbstractPolyList::isInterestedInPlane(const PlaneF& plane)
 {

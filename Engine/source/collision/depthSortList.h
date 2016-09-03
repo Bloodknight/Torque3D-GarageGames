@@ -99,8 +99,7 @@ class DepthSortList : public ClippedPolyList
    // void plane(U32 v1,U32 v2,U32 v3);
    // void plane(const PlaneF& p);
    // void vertex(U32 vi);
-   bool getMapping(MatrixF *, Box3F *);
-
+   
    // access to the polys in order (note: returned pointers are volatile, may change if polys added).
    void getOrderedPoly(U32 ith, Poly ** poly, PolyExtents ** polyExtent);
 

@@ -185,12 +185,6 @@ public:
    /// Mark the end of a surface.
    virtual void end() = 0;
 
-   /// Return list transform and bounds in list space.
-   ///
-   /// @returns False if no data is available.
-   virtual bool getMapping(MatrixF *, Box3F *);
-   /// @}
-
    /// @name Interest
    ///
    /// This is a mechanism to let you specify interest in a specific normal.

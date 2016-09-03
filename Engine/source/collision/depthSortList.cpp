@@ -99,22 +99,6 @@ void DepthSortList::end()
    mPolyIndexList.push_back(numPoly-1);
 }
 
-//----------------------------------------------------------------------------
-
-bool DepthSortList::getMapping(MatrixF * mat, Box3F * box)
-{
-   // return list transform and bounds in list space...optional
-   *mat = mMatrix;
-   mat->inverse();
-   box->minExtents.set(-mExtent.x,             0.0f, -mExtent.z);
-   box->maxExtents.set( mExtent.x, 2.0f * mExtent.y,  mExtent.z);
-
-   return true;
-}
-
-//----------------------------------------------------------------------------
-//----------------------------------------------------------------------------
-
 void DepthSortList::setExtents(Poly & poly, PolyExtents & polyExtents)
 {
    Point3F p = mVertexList[mIndexList[poly.vertexStart]].point;
