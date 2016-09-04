@@ -31,6 +31,9 @@
 #include "math/mPoint3.h"
 #endif
 
+#include "glm/glm.hpp"
+#include "glm/ext.hpp"
+#include "glm/vec4.hpp"
 
 //------------------------------------------------------------------------------
 /// 4D integer point
@@ -40,14 +43,17 @@ class Point4I
 {
   public:
    Point4I() {}
+   Point4I(glm::ivec4 s);
    Point4I(S32 _x, S32 _y, S32 _z, S32 _w);
 
    void zero();   ///< Zero all values
 
+   glm::ivec4 v;
    S32 x;                                                   
    S32 y;                                                   
    S32 z;                                                   
    S32 w;       
+
 
 	//-------------------------------------- Public static constants
   public:
@@ -121,6 +127,15 @@ typedef Point4F Vector4F;   ///< Points can be vectors!
 inline void Point4I::zero()
 {
    x = y = z = w = 0;
+}
+
+inline Point4I::Point4I(glm::ivec4 s)
+{
+	v = s;
+}
+
+inline Point4I::Point4I(S32 _x, S32 _y, S32 _z, S32 _w) : x(_x), y(_y), z(_z), w(_w)
+{
 }
 
 //------------------------------------------------------------------------------
@@ -224,9 +239,7 @@ inline Point4F Point4F::operator /(F32 t) const
 //------------------------------------------------------------------------------
 //-------------------------------------- Point4F
 
-inline Point4I::Point4I(S32 _x, S32 _y, S32 _z, S32 _w) : x(_x), y(_y), z(_z), w(_w) 
-{
-}
+
 
 //-------------------------------------------------------------------
 // Non-Member Operators
