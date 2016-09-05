@@ -245,19 +245,19 @@ namespace PropertyInfo
       {
          Point4F tempResult;
          dSscanf(data.c_str(),"%f %f %f %f",&tempResult.x,&tempResult.y,&tempResult.z,&tempResult.w);
-         result.x = mFloor(tempResult.x);
-         result.y = mFloor(tempResult.y);
-         result.z = mFloor(tempResult.z);
-         result.w = mFloor(tempResult.w);
+         result.v.x = mFloor(tempResult.x);
+         result.v.y = mFloor(tempResult.y);
+         result.v.z = mFloor(tempResult.z);
+         result.v.w = mFloor(tempResult.w);
       }
       else
-         dSscanf(data.c_str(),"%d %d %d %d",&result.x,&result.y,&result.z,&result.w);
+         dSscanf(data.c_str(),"%d %d %d %d",&result.v.x,&result.v.y,&result.v.z,&result.v.w);
       return true;      
    }
 
    bool default_print(String & result, const Point4I & data)
    {
-      result = String::ToString("%d %d %d %d", data.x, data.y, data.z, data.w);
+      result = String::ToString("%d %d %d %d", data.v.x, data.v.y, data.v.z, data.v.w);
       return true;
    }
 

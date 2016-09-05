@@ -53,8 +53,9 @@ const Point3F Point3F::UnitZ(0.0f, 0.0f, 1.0f);
 const Point3D Point3D::One(1.0, 1.0, 1.0);
 const Point3D Point3D::Zero(0.0, 0.0, 0.0);
 
-const Point4I Point4I::One(1, 1, 1, 1);
-const Point4I Point4I::Zero(0, 0, 0, 0);
+//const Point4I Point4I::(glm::ivec4);
+const Point4I Point4I::One(glm::ivec4(1, 1, 1, 1));
+const Point4I Point4I::Zero(glm::ivec4(0, 0, 0, 0));
 
 const Point4F Point4F::One(1.0f, 1.0f, 1.0f, 1.0f);
 const Point4F Point4F::Zero(0.0f, 0.0f, 0.0f, 0.0f);

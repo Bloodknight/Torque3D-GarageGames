@@ -31,6 +31,9 @@
 #include "math/mPoint3.h"
 #endif
 
+#pragma warning( disable:4201)
+#pragma warning( disable:4310)
+#pragma warning( disable:4324)
 #include "glm/glm.hpp"
 #include "glm/ext.hpp"
 #include "glm/vec4.hpp"
@@ -41,25 +44,45 @@
 /// Uses S32 internally. Currently storage only.
 class Point4I
 {
-  public:
-   Point4I() {}
-   Point4I(glm::ivec4 s);
-   Point4I(S32 _x, S32 _y, S32 _z, S32 _w);
+public:
+	Point4I() {}
+	Point4I(glm::ivec4 s);
+	Point4I(S32 _x, S32 _y, S32 _z, S32 _w);
 
-   void zero();   ///< Zero all values
+	void zero();   ///< Zero all values
 
-   glm::ivec4 v;
-   S32 x;                                                   
-   S32 y;                                                   
-   S32 z;                                                   
-   S32 w;       
+	glm::ivec4 v;
+
 
 
 	//-------------------------------------- Public static constants
-  public:
+public:
 	const static Point4I One;
 	const static Point4I Zero;
 };
+
+//------------------------------------------------------------------------------
+// -------------------------	End Point4I
+
+inline void Point4I::zero()
+{
+	v.x = v.y = v.z = v.w = 0;
+}
+
+inline Point4I::Point4I(glm::ivec4 vec)
+{
+	v = vec;
+}
+
+inline Point4I::Point4I(S32 _x, S32 _y, S32 _z, S32 _w)
+{
+	v.x = _x;
+	v.y = _y;
+	v.z = _z;
+	v.w = _w;
+}
+// -------------------------	End Point4I
+
 
 //------------------------------------------------------------------------------
 /// 4D floating-point point.
@@ -122,25 +145,8 @@ class Point4F
 typedef Point4F Vector4F;   ///< Points can be vectors!
 
 //------------------------------------------------------------------------------
-//-------------------------------------- Point4I
+// -------------------------	Start Point4F
 
-inline void Point4I::zero()
-{
-   x = y = z = w = 0;
-}
-
-inline Point4I::Point4I(glm::ivec4 s)
-{
-	v = s;
-}
-
-inline Point4I::Point4I(S32 _x, S32 _y, S32 _z, S32 _w) : x(_x), y(_y), z(_z), w(_w)
-{
-}
-
-//------------------------------------------------------------------------------
-//-------------------------------------- Point4F
-//
 inline Point4F::Point4F()
 {
 }
@@ -236,10 +242,7 @@ inline Point4F Point4F::operator /(F32 t) const
    return Point4F( x * f, y * f, z * f, w * f );
 }
 
-//------------------------------------------------------------------------------
-//-------------------------------------- Point4F
-
-
+// -------------------------	End Point4F
 
 //-------------------------------------------------------------------
 // Non-Member Operators
