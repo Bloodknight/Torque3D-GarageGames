@@ -418,7 +418,7 @@ inline MatrixF& MatrixF::mul(const MatrixF &a, const F32 b)
 inline void MatrixF::mul( Point4F& p ) const
 {
    Point4F temp;
-   m_matF_x_point4F(*this, &p.x, &temp.x);
+   m_matF_x_point4F(*this, &p.v.x, &temp.v.x);
    p = temp;
 }
 
@@ -467,8 +467,8 @@ inline void MatrixF::getColumn(S32 col, Point4F *cptr) const
 {
    cptr->x = m[col];
    cptr->y = m[col+4];
-   cptr->z = m[col+8];
-   cptr->w = m[col+12];
+   cptr->v.z = m[col+8];
+   cptr->v.w = m[col+12];
 }
 
 inline void MatrixF::getColumn(S32 col, Point3F *cptr) const

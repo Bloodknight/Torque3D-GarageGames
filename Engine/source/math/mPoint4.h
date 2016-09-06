@@ -110,8 +110,15 @@ class Point4F
    F32 z;   ///< Z co-ordinate.
    F32 w;   ///< W co-ordinate.
 */
-
-   glm::vec4 v;
+	union {
+		struct {
+			float x;
+			float y;
+			float z;
+			float w;
+		};
+		glm::vec4 v;
+	};
 
   public:
    Point4F();               ///< Create an uninitialized point.
