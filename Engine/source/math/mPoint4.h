@@ -31,11 +31,21 @@
 #include "math/mPoint3.h"
 #endif
 
+/*	---------------------------------------------------
+*		GLM Library Implementation
+*
+*	TODO
+*	Reduce #Pragama Warnings, to 0 if possible
+*	Reduce bloat by using only necessary headers from glm and ext
+*
+*/
+
 #pragma warning( disable:4201)
 #pragma warning( disable:4310)
 #pragma warning( disable:4324)
 #include "glm/glm.hpp"
 #include "glm/ext.hpp"
+
 
 
 //------------------------------------------------------------------------------
@@ -94,10 +104,14 @@ class Point4F
 {
    //-------------------------------------- Public data
   public:
+/*
    F32 x;   ///< X co-ordinate.
    F32 y;   ///< Y co-ordinate.
    F32 z;   ///< Z co-ordinate.
    F32 w;   ///< W co-ordinate.
+*/
+
+   glm::vec4 v;
 
   public:
    Point4F();               ///< Create an uninitialized point.
@@ -105,6 +119,8 @@ class Point4F
 
    /// Create point from coordinates.
    Point4F(F32 _x, F32 _y, F32 _z, F32 _w);
+
+   Point4F(glm::vec4 v);
 
    /// Set point's coordinates.
    void set(F32 _x, F32 _y, F32 _z, F32 _w);
@@ -118,23 +134,26 @@ class Point4F
 
    void zero();
 
-   operator F32*() { return (&x); }
-   operator const F32*() const { return &x; }
+   operator F32*() { return (&v.x); }
+   operator const F32*() const { return &v.x; }
    
    F32 len() const;
 
    Point4F operator/(F32) const;
 
-   Point4F operator*(F32) const;
+   Point4F  operator*(F32) const;
    Point4F  operator+(const Point4F&) const;
    Point4F& operator+=(const Point4F&);
    Point4F  operator-(const Point4F&) const;      
-   Point4F operator*(const Point4F&) const;
+   Point4F  operator*(const Point4F&) const;
    Point4F& operator*=(const Point4F&);
    Point4F& operator=(const Point3F&);
    Point4F& operator=(const Point4F&);
-   
-   Point3F asPoint3F() const { return Point3F(x,y,z); }
+
+	Point3F asPoint3F() const
+	{
+		return Point3F(v.x, v.y, v.z);
+	}
 
 	//-------------------------------------- Public static constants
   public:
@@ -149,97 +168,104 @@ typedef Point4F Vector4F;   ///< Points can be vectors!
 
 inline Point4F::Point4F()
 {
+	v = glm::vec4(0);
 }
 
 inline Point4F::Point4F(const Point4F& _copy)
- : x(_copy.x), y(_copy.y), z(_copy.z), w(_copy.w)
 {
+	v.x = _copy.v.x;
+	v.y = _copy.v.y;
+	v.z = _copy.v.z;
+	v.w = _copy.v.w;
+}
+
+inline Point4F::Point4F(glm::vec4 s)
+{
+	v = s;
 }
 
 inline Point4F::Point4F(F32 _x, F32 _y, F32 _z, F32 _w)
- : x(_x), y(_y), z(_z), w(_w)
 {
-}
+	v.x = _x;
+	v.y = _y;
+	v.z = _z;
+	v.w = _w;
 
+	}
 inline void Point4F::set(F32 _x, F32 _y, F32 _z, F32 _w)
 {
-   x = _x;
-   y = _y;
-   z = _z;
-   w = _w;
+   v.x = _x;
+   v.y = _y;
+   v.z = _z;
+   v.w = _w;
 }
 
 inline F32 Point4F::len() const
 {
-   return mSqrt(x*x + y*y + z*z + w*w);
+	//glm::sqrt();
+   return mSqrt(v.x*v.x + v.y*v.y + v.z*v.z + v.w*v.w);
 }
 
 inline void Point4F::interpolate(const Point4F& _from, const Point4F& _to, F32 _factor)
 {
-   x = (_from.x * (1.0f - _factor)) + (_to.x * _factor);
-   y = (_from.y * (1.0f - _factor)) + (_to.y * _factor);
-   z = (_from.z * (1.0f - _factor)) + (_to.z * _factor);
-   w = (_from.w * (1.0f - _factor)) + (_to.w * _factor);
+	v.x = (_from.v.x * (1.0f - _factor)) + (_to.v.x * _factor);
+	v.y = (_from.v.y * (1.0f - _factor)) + (_to.v.y * _factor);
+	v.z = (_from.v.z * (1.0f - _factor)) + (_to.v.z * _factor);
+	v.w = (_from.v.w * (1.0f - _factor)) + (_to.v.w * _factor);
 }
+
+/*inline void Point4F::interpolate(const Point4F& _from, const Point4F& _to, F32 _factor)
+{
+	glm::mix(_from, _to, _factor);
+}*/
 
 inline void Point4F::zero()
 {
-   x = y = z = w = 0.0f;
+	v = glm::vec4(0);
 }
 
-inline Point4F& Point4F::operator=(const Point3F &_vec)
+inline Point4F& Point4F::operator=(const Point3F& _vec)
 {
-   x = _vec.x;
-   y = _vec.y;
-   z = _vec.z;
-   w = 1.0f;
-   return *this;
+	v = glm::vec4(glm::vec3(_vec), 1.0f);
+	return *this;
 }
 
-inline Point4F& Point4F::operator=(const Point4F &_vec)
+inline Point4F& Point4F::operator=(const Point4F& _vec)
 {
-   x = _vec.x;
-   y = _vec.y;
-   z = _vec.z;
-   w = _vec.w;
-
-   return *this;
+	v = glm::vec4(_vec);
+	return *this;
 }
 
 inline Point4F Point4F::operator+(const Point4F& _add) const
 {
-   return Point4F( x + _add.x, y + _add.y, z + _add.z, w + _add.w );
+	return v + glm::vec4(_add);
 }
 
 inline Point4F& Point4F::operator+=(const Point4F& _add)
 {
-   x += _add.x;
-   y += _add.y;
-   z += _add.z;
-   w += _add.w;
-
-   return *this;
+	v += glm::vec4(_add);
+	return *this;
 }
 
 inline Point4F Point4F::operator-(const Point4F& _rSub) const
 {
-   return Point4F( x - _rSub.x, y - _rSub.y, z - _rSub.z, w - _rSub.w );
+	return v - glm::vec4(_rSub);
 }
 
-inline Point4F Point4F::operator*(const Point4F &_vec) const
+inline Point4F Point4F::operator*(const Point4F& _vec) const
 {
-   return Point4F(x * _vec.x, y * _vec.y, z * _vec.z, w * _vec.w);
+	return v * glm::vec4(_vec);
 }
 
 inline Point4F Point4F::operator*(F32 _mul) const
 {
-   return Point4F(x * _mul, y * _mul, z * _mul, w * _mul);
+	return glm::mul(v, _mul);
 }
 
 inline Point4F Point4F::operator /(F32 t) const
 {
    F32 f = 1.0f / t;
-   return Point4F( x * f, y * f, z * f, w * f );
+   return Point4F( v.x * f, v.y * f, v.z * f, v.w * f );   
 }
 
 // -------------------------	End Point4F
@@ -255,7 +281,8 @@ inline Point4F operator*(F32 mul, const Point4F& multiplicand)
 
 inline bool mIsNaN( const Point4F &p )
 {
-   return mIsNaN_F( p.x ) || mIsNaN_F( p.y ) || mIsNaN_F( p.z ) || mIsNaN_F( p.w );
+	return glm::isnan(p);
+   //return mIsNaN_F( p.x ) || mIsNaN_F( p.y ) || mIsNaN_F( p.z ) || mIsNaN_F( p.w );
 }
 
 #endif // _MPOINT4_H_
