@@ -59,6 +59,10 @@ exec("./turret.cs");
 exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
 exec("./gameDM.cs"); // Overrides GameCore with DeathMatch functionality.
 
+// setup the behavior tree framework
+exec("./BadBehavior/main.cs");
+
+
 //Entity/Component stuff
 if(isFile("./components/game/camera.cs"))
    exec("./components/game/camera.cs");
