@@ -5,6 +5,7 @@ MIT Licensed Open Source version of [Torque 3D](http://torque3d.org) from [Garag
 [![GitHub tag](https://img.shields.io/github/tag/GarageGames/Torque3D.svg)](https://github.com/GarageGames/Torque3D/tags)
 [![GitHub release](https://img.shields.io/github/release/GarageGames/Torque3D.svg)](https://github.com/GarageGames/Torque3D/releases/latest)
 [![Github All Releases](https://img.shields.io/github/downloads/GarageGames/Torque3D/total.svg)](https://github.com/GarageGames/Torque3D/releases/latest)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBloodknight%2FTorque3D.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBloodknight%2FTorque3D?ref=badge_shield)
 
 [![IRC](https://img.shields.io/badge/irc-%23garagegames-green.svg)](https://kiwiirc.com/client/irc.maxgaming.net/?nick=wiki_user|?#garagegames)
 
@@ -29,3 +30,6 @@ They are available from the [downloads](http://wiki.torque3d.org/main:downloads)
 # License 
 
 All assets and code are under the [![license](https://img.shields.io/github/license/GarageGames/Torque3D.svg)](https://github.com/GarageGames/Torque3D/blob/master/LICENSE.md)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBloodknight%2FTorque3D.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBloodknight%2FTorque3D?ref=badge_large)
