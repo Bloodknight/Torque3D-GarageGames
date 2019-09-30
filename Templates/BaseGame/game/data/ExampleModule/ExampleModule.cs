@@ -6,7 +6,6 @@
 //else.
 function ExampleModule::onCreate(%this)
 {
-   %bool = true;
 }
 
 //Similar to the create function, this is defined in thye module file, and called 
@@ -70,6 +69,8 @@ function ExampleModule::onDestroyGameServer(%this)
 function ExampleModule::initClient(%this)
 {
    AssetDatabase.acquireAsset("ExampleModule:exampleDatablock");
+   AssetDatabase.acquireAsset("ExampleModule:examplePostEffect");
+   AssetDatabase.acquireAsset("ExampleModule:exampleGUI");
    
    //client scripts
    //Here, we exec out keybind scripts so the player is able to move when they get into a game
