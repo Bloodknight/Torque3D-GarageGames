@@ -168,8 +168,8 @@ new GuiControlProfile(GuiCheckBoxProfile)
    border = false;
    borderColor = "100 100 100";
    fontSize = 14;
-   fontColor = "20 20 20";
-   fontColorHL = "80 80 80";
+   fontColor = "244 242 242 255";
+   fontColorHL = "39 38 38 255";
 	fontColorNA = "200 200 200";
    fixedExtent = true;
    justify = "left";
