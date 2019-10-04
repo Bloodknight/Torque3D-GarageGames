@@ -647,6 +647,7 @@ new GuiControlProfile( ToolsGuiTextPadProfile )
    fontColorSEL = EditorSettings.value("Theme/fieldTextSELColor");   
    border = 0;
    category = "Tools";
+   cursorColor = "0 255 0 255";
 };
 
 if( !isObject( ToolsGuiFormProfile ) )
