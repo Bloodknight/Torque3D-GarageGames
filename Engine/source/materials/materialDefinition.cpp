@@ -185,6 +185,7 @@ Material::Material()
    dMemset(mCellSize, 0, sizeof(mCellSize));
    dMemset(mNormalMapAtlas, 0, sizeof(mNormalMapAtlas));
    dMemset(mUseAnisotropic, 0, sizeof(mUseAnisotropic));
+   dMemset(mUseNoFilters, 0, sizeof(mUseNoFilters));   
 
    // Deferred Shading : Metalness
    dMemset(mUseMetalness, 0, sizeof(mUseMetalness));
@@ -327,7 +328,9 @@ void Material::initPersistFields()
       
       addField( "useAnisotropic", TypeBool, Offset(mUseAnisotropic, Material), MAX_STAGES,
          "Use anisotropic filtering for the textures of this stage." );
-     
+      addField("UseNoFilters", TypeBool, Offset(mUseNoFilters, Material), MAX_STAGES,
+         "Use No filtering for the textures of this stage. (NOTE: Overrides Anisotropiv settings");
+      
       addField("vertLit", TypeBool, Offset(mVertLit, Material), MAX_STAGES,
          "If true the vertex color is used for lighting." );
 

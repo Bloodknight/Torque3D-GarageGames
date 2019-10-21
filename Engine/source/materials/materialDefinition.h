@@ -322,6 +322,7 @@ public:
 
    /// If the stage should use anisotropic filtering.
    bool mUseAnisotropic[MAX_STAGES];
+   bool mUseNoFilters[MAX_STAGES];
 
    // Deferred Shading: Metalness
    bool mUseMetalness[MAX_STAGES];

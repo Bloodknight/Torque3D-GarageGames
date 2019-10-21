@@ -247,6 +247,9 @@ void ProcessedMaterial::_initPassStateBlock( RenderPassData *rpd, GFXStateBlockD
    if (mMaterial &&  mMaterial->mUseAnisotropic[ rpd->mStageNum ] )
       maxAnisotropy = MATMGR->getDefaultAnisotropy();
 
+   if (mMaterial &&  mMaterial->mUseNoFilters[rpd->mStageNum])
+      bool UseNoFilters = mMaterial->mUseNoFilters[rpd->mStageNum];
+
    for( U32 i=0; i < rpd->mNumTex; i++ )
    {      
       U32 currTexFlag = rpd->mTexType[i];
@@ -265,11 +268,15 @@ void ProcessedMaterial::_initPassStateBlock( RenderPassData *rpd, GFXStateBlockD
                result.samplers[i].magFilter = GFXTextureFilterAnisotropic;
                result.samplers[i].maxAnisotropy = maxAnisotropy;
             }
+            else if (mMaterial &&  mMaterial->mUseNoFilters[rpd->mStageNum]) {
+               result.samplers[i].minFilter = GFXTextureFilterNone;
+               result.samplers[i].magFilter = GFXTextureFilterNone;
+            }
             else
-            {
+            {               
                result.samplers[i].minFilter = GFXTextureFilterLinear;
                result.samplers[i].magFilter = GFXTextureFilterLinear;
-            }
+            }                        
             break;
          }
 
